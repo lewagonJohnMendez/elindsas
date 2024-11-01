@@ -112,9 +112,23 @@ h6 {
   }
 }
 
+@media (max-width: 768px) {
+  #topbar .contact-info {
+    flex-direction: column; /* Cambia la dirección a columna en móviles */
+    align-items: flex-start; /* Alinea a la izquierda */
+    gap: 5px; /* Agrega un espacio entre los elementos */
+  }
+  #topbar .contact-info i {
+    margin: 0; /* Elimina el margen en íconos para pantallas pequeñas */
+  }
+  #topbar .contact-info a {
+    display: block; /* Fuerza los enlaces a ocupar toda la línea */
+  }
+}
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
+
 #topbar {
   background: #106eea;
   height: 40px;

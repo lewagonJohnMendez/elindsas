@@ -1629,6 +1629,28 @@ section {
 .contact .php-email-form button[type=submit]:hover {
   background: #3b8af2;
 }
+.whatsapp-float {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  top: 50%;
+  right: 1%;
+  background-color: #3b8af2;
+  color: #FFF;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #b3d1fa;
+}
 
 @keyframes animate-loading {
   0% {
@@ -1643,6 +1665,7 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
 #footer {
   background: #fff;
   padding: 0 0 30px 0;

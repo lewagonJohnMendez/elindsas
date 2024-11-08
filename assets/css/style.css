@@ -634,12 +634,11 @@ section {
 
 .section-title p {
   margin: 15px auto 0 auto;
-  font-weight: 600;
 }
 
 @media (min-width: 1024px) {
   .section-title p {
-    width: 50%;
+    width: 70%;
   }
 }
 
@@ -724,10 +723,10 @@ section {
   z-index: -1;
 }
 
-.featured-services .icon-box:hover::before {
-  background: #106eea;
-  top: 0;
-  border-radius: 0px;
+.featured-services .icon-box:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Ajusta los valores para más o menos sombra */
+  transform: translateY(-5px); /* Opcional: eleva el contenedor al hacer hover */
+  transition: 0.3s; /* Añade una transición suave */
 }
 
 .featured-services .icon {
@@ -757,14 +756,14 @@ section {
   margin-bottom: 0;
 }
 
-.featured-services .icon-box:hover .title a,
+/*.featured-services .icon-box:hover .title a,
 .featured-services .icon-box:hover .description {
   color: #fff;
 }
 
 .featured-services .icon-box:hover .icon i {
   color: #fff;
-}
+}*/
 
 /*--------------------------------------------------------------
 # About

@@ -765,6 +765,57 @@ section {
   color: #fff;
 }*/
 
+
+/*--------------------------------------------------------------
+# timeline efectos
+--------------------------------------------------------------*/
+
+/* Timeline container */
+.timeline {
+  max-width: 880px;
+  position: relative;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  margin: 1.5rem 0;
+  padding-left: 2.5rem;
+}
+
+/* Timeline icon */
+.timeline-icon {
+  position: absolute;
+  left: -14px;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+/* Timeline content */
+.timeline-content {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: small;
+}
+
+.timeline-content h4 {
+  margin: 0 0 0.5rem;
+  color: #007bff;
+  font-weight: bold;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/

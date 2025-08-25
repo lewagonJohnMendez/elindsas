@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <base href="/" />
   <title>ELIND SAS: Soluciones en Soldadura Industrial, Alta Frecuencia, Ultrasonido e induccion electromagnetica</title>
   <meta content="Elind SAS: Soluciones en calentamiento industrial. Maquinaria de alta frecuencia, ultrasonido y hornos de inducción para diversas aplicaciones. ¡Contáctanos!" name="description">
   <meta content="soldadura industrial, alta frecuencia, ultrasonido, hornos de inducción, electromagnética, selladoras, plásticos, PVC, PU, EVA, metales, forja, equipos industriales" name="keywords">
@@ -47,29 +47,10 @@
   </section>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <!-- <h1 class="logo"><a href="index.html">BizLand<span>.</span></a></h1> -->
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Logotipo de ELIND SAS"></a>
-  <!--inicio navbar-->
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="/index.html">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="/nuestra-historia.html">Nosotros</a></li>
-          <li><a class="nav-link" href="services.html">Servicios</a></li>
-          <li><a class="nav-link scrollto " href="portfolio.html">Productos</a></li>
-          <li><a class="nav-link" href="machinery.html">Maquinaria</a></li>
-          <li><a class="nav-link" href="blog.html">Blog</a></li>
-          <li><a class="nav-link scrollto" href="contact.html">Contáctenos</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-  <!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
+  <header>
+    <div id="app-header"></div>
+ </header>
+ <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
@@ -226,300 +207,129 @@
       </div>
     </section><!-- End Clients Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portafolio</h2>
-          <h3>Nuestras <span>Soluciones</span></h3>
-          <p>Descubre nuestras soluciones innovadoras en maquinaria de sellado y calentamiento industrial. <br>Cada proyecto desarrollado por nosotros, es un testimonio de calidad, eficiencia y tecnología avanzada para optimizar procesos en la industria.</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">Todo</li>
-              <li data-filter=".filter-manufacturas">Manufacturas</li>
-              <li data-filter=".filter-empaques">Empaques</li>
-              <li data-filter=".filter-lonas">Lonas y Membranas</li>
-              <li data-filter=".filter-no-tejidos">No Tejidos</li>
-              <li data-filter=".filter-tratamientos-termicos">Tratamientos Térmicos</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-lonas">
-            <img src="assets/img/portfolio/1800n.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 1800 watios">
-            <div class="portfolio-info">
-              <h4>SEM 1800N</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/1800n.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="selladora de alta frecuencia"><i class="bx bx-plus"></i></a>
-              <a href="sem1800n-detalles.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-alta-frecuencia">
-            <img src="assets/img/portfolio/1800nq.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 1800 watios para cojines">
-            <div class="portfolio-info">
-              <h4>SEM 1800NQ</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/1800nq.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 1800nq para sellado de cojines"><i class="bx bx-plus"></i></a>
-              <a href="1800nq-detalles.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-alta-frecuencia">
-            <img src="assets/img/portfolio/1800nqinox.jpg" class="img-fluid" alt="electro selladora de alta frecuencia para acero inoxidable para el sellado de cojines">
-            <div class="portfolio-info">
-              <h4>SEM 1800NQ Inoxidable</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/1800nqinox.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 1800nq inoxidable para el sellado de cojínes"><i class="bx bx-plus"></i></a>
-              <a href="1800nqinox-detalles.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-lonas">
-            <img src="assets/img/portfolio/3500n.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 3500 watios para manofacturas">
-            <div class="portfolio-info">
-              <h4>SEM 3500N</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/3500n.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 3500N para manufacturas"><i class="bx bx-plus"></i></a>
-              <a href="3500n-detalles.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-tratamientos-termicos">
-            <img src="assets/img/portfolio/3500nb.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 3500 watios para manofacturas con bandejas">
-            <div class="portfolio-info">
-              <h4>SEM 3500NB</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/3500nb.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 3500N para manufacturas con bandejas"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-empaques">
-            <img src="assets/img/portfolio/4500n.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 4500 watios para manofacturas">
-            <div class="portfolio-info">
-              <h4>SEM 4500N</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/4500n.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 4500N para manufacturas"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-empaques">
-            <img src="assets/img/portfolio/4500nb.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 4500 watios para manofacturas con bandejas">
-            <div class="portfolio-info">
-              <h4>SEM 4500NB</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/4500nb.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 4500NB para manufacturas con bandejas"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-alta-frecuencia">
-            <img src="assets/img/portfolio/6500n.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 6500 watios para manofacturas">
-            <div class="portfolio-info">
-              <h4>SEM 6500N</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/6500n.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 6500N para manufacturas"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-alta-frecuencia">
-            <img src="assets/img/portfolio/6500nbhb.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 6500 watios para manofacturas con bandejas">
-            <div class="portfolio-info">
-              <h4>SEM 6500NB/HB</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/6500nb.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 6500N para manufacturas con bandejas"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-alta-frecuencia">
-            <img src="assets/img/portfolio/15000phb.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 15000 watios para manofacturas con bandejas">
-            <div class="portfolio-info">
-              <h4>SEM 1500PHB</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/15000phb.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 15000phb para manufacturas con bandejas"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-   <!-- ======= Preguntas Frecuentes ======= -->
-<section id="faq" class="faq section-bg">
+<!-- ======= Preguntas Frecuentes ======= -->
+<section id="faq" class="faq section-bg" itemscope itemtype="https://schema.org/FAQPage">
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
       <h2>F.A.Q</h2>
       <h3>Preguntas <span>Frecuentes</span></h3>
-      <p>Resuelve tus dudas sobre nuestros servicios de diseño, maquila de alta frecuencia, ultrasonido e inducción electromagnética.</p>
+      <p>Resuelve tus dudas sobre nuestros servicios de diseño, maquila y maquinaria de alta frecuencia, ultrasonido e inducción electromagnética de <strong>ELIND SAS</strong>.</p>
     </div>
 
     <div class="row justify-content-center">
       <div class="col-xl-10">
         <ul class="faq-list">
 
-          <li>
-            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">
+          <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1" itemprop="name">
               ¿Qué es la tecnología de alta frecuencia y cómo funciona?
               <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
             </div>
-            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Esta maquinaria está diseñada para fusionar de manera eficiente plásticos polares como PVC, PET, TPU y PU. 
-                Genera energía térmica de forma uniforme y rápida desde el interior del material, preservando sus características técnicas y químicas. 
-                Este método optimiza el tiempo de sellado y reduce el consumo energético. 
-                El proceso es extremadamente rápido, variando entre 0.5 y 6 segundos según el tamaño del sello o el tipo de proceso.
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">
+                En <strong>ELIND SAS</strong> utilizamos maquinaria de alta frecuencia diseñada para fusionar plásticos polares como PVC, PET, TPU y PU. 
+                El proceso genera calor desde el interior del material mediante ondas electromagnéticas, logrando un sellado uniforme en tiempos de 0.5 a 6 segundos. 
+                Esto permite mayor eficiencia, menor consumo de energía y preservación de las propiedades técnicas del material.
               </p>
             </div>
           </li>
 
-          <li>
-            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">
+          <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question" itemprop="name">
               ¿Qué materiales pueden soldarse con ultrasonido?
               <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
             </div>
-            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                La tecnología de ultrasonido ofrece una amplia gama de aplicaciones para trabajar productos textiles y plásticos no polares. 
-                Es ideal para sellar y ensamblar poliéster, nylon, tereton, polipropileno (PP), polietileno (PE), acrílicos, ABS, fibras no tejidas y componentes de autopartes. 
-                Además, se adapta a diversas necesidades de fabricación, garantizando un sellado limpio, preciso y sin adhesivos químicos. 
-                Las aplicaciones se personalizan según los requerimientos específicos de cada cliente.
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">
+                La soldadura por ultrasonido de <strong>ELIND SAS</strong> es ideal para textiles y plásticos no polares. 
+                Permite unir poliéster, nylon, polipropileno, polietileno, acrílicos, ABS y fibras no tejidas, entre otros. 
+                Es un método limpio y preciso, sin adhesivos químicos, que se adapta a sectores como autopartes, empaque y textiles técnicos.
               </p>
             </div>
           </li>
 
-          <li>
-            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">
+          <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question" itemprop="name">
               ¿Cuáles son las ventajas de la inducción electromagnética?
               <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
             </div>
-            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                <p class="description">
-                  La tecnología de inducción electromagnética de ELIND SAS permite que aceros y metales alcancen rápidamente temperaturas de temple, plasticidad o fundición, optimizando tiempos de producción y consumo energético. 
-                  Es ideal para forja, tratamientos térmico, fundición de acero, aluminio, cobre y metales preciosos, así como para el sellado hermético de tapas de fóil de aluminio en alimentos, cosméticos y farmacéuticos. 
-                  También se utiliza en el temple (endurecimiento) de piezas automotrices, soldadura de tubos y calentamiento selectivo. 
-                  Nuestra maquinaria se diseña a la medida de las necesidades de nuestros clientes para garantizar precisión, eficiencia y alta productividad.
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">
+                La tecnología de inducción electromagnética de <strong>ELIND SAS</strong> permite calentar aceros y metales de forma rápida y controlada, 
+                optimizando procesos de temple, fundición y forja. 
+                También se aplica en el sellado hermético de tapas de aluminio para alimentos, cosméticos y farmacéuticos. 
+                Ofrece eficiencia energética, precisión y adaptabilidad a diferentes industrias.
               </p>
             </div>
           </li>
 
-          <li>
-            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">
+          <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question" itemprop="name">
               ¿Ofrecen servicios de diseño y prototipado?
               <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
             </div>
-            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Sí, en ELIND SAS contamos con un equipo especializado en diseño y prototipado de productos plásticos. Desarrollamos soluciones personalizadas para garantizar la funcionalidad, estética, calidad y durabilidad de tus proyectos.
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">
+                Sí. En <strong>ELIND SAS</strong> desarrollamos proyectos de diseño y prototipado a medida. 
+                Nuestro equipo combina innovación, estética y funcionalidad para asegurar la calidad y durabilidad de los productos antes de su producción en serie.
               </p>
             </div>
           </li>
 
-          <li>
-            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">
+          <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question" itemprop="name">
               ¿Qué diferencia a ELIND SAS de otras empresas del sector?
               <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
             </div>
-            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Con más de 49 años de experiencia en el sector, combinamos tecnología de punta con un enfoque en calidad y precisión, posicionándonos como líderes en soluciones de alta frecuencia, ultrasonido e inducción electromagnética. 
-                Nuestras tecnologías están diseñadas para garantizar un rendimiento óptimo sin importar la altitud ni las condiciones extremas de salinidad, humedad o sequedad presentes en los territorios latinoamericanos, con nuestras tecnologías no tendras problemas externos que no permitan un rendimiento eficiente como ocurre con equipos provenientes de otras regiones del globo.              
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">
+                Con más de 49 años de experiencia, <strong>ELIND SAS</strong> se distingue por diseñar soluciones adaptadas a las condiciones de Latinoamérica, 
+                donde factores como altitud, humedad y salinidad pueden afectar el rendimiento de equipos convencionales. 
+                Nuestra tecnología está probada para garantizar eficiencia y durabilidad en cualquier entorno.
               </p>
             </div>
           </li>
 
-          <li>
-            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">
+          <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question" itemprop="name">
+              ¿Brindan capacitación y soporte técnico para fabricar capelladas de zapatos?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+            </div>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">
+                Sí, en <b>ELIND SAS</b> ofrecemos programas de capacitación especializados para el uso de maquinaria de alta frecuencia aplicada a la fabricación de capelladas y muchos más productos. 
+                Nuestros ingenieros acompañan a los clientes en la instalación, ajuste y optimización del proceso de sellado, asegurando resultados consistentes en producción, calidad de acabados y durabilidad. 
+                Además, contamos con soporte técnico remoto y presencial para garantizar la continuidad de tu operación.
+              </p>
+            </div>
+          </li>
+
+            <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div data-bs-toggle="collapse" href="#faq7" class="collapsed question" itemprop="name">
+              ¿Realizan envíos internacionales de maquinaria y productos?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+            </div>
+            <div id="faq7" class="collapse" data-bs-parent=".faq-list" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">
+                Sí, <b>ELIND SAS</b> cuenta con amplia experiencia en exportaciones. Hemos enviado maquinaria de alta frecuencia, ultrasonido e inducción electromagnética a diferentes países de Latinoamérica, Norteamérica y Europa. 
+                Cada equipo se despacha con embalaje certificado y documentación completa (factura, lista de empaque, guía aérea o marítima, certificado de origen y manuales técnicos). 
+                Además, nuestras máquinas incluyen garantía internacional y soporte postventa, asegurando que los clientes reciban un producto listo para operar en cualquier parte del mundo.
+              </p>
+            </div>
+          </li>
+
+          <li itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div data-bs-toggle="collapse" href="#faq8" class="collapsed question" itemprop="name">
               ¿Cómo solicitar una cotización personalizada?
               <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
             </div>
-            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Solicita una cotización personalizada en nuestra sección de <a href="contact.html">Contacto</a>, o comunícate con nosotros de manera directa a través de nuestro <a href="https://wa.me/573133845117" target="_blank">botón de WhatsApp</a> o enviando un correo a <a href="mailto:ventas@meic-elind.com">ventas@meic-elind.com</a>. 
-                Nuestro equipo estará encantado de asesorarte en cada paso del proceso.
+            <div id="faq8" class="collapse" data-bs-parent=".faq-list" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">
+                Puedes solicitar una cotización en nuestra sección de <a href="contact.html">Contacto</a>, 
+                por <a href="https://wa.me/573133845117" target="_blank" rel="noopener">WhatsApp</a> 
+                o al correo <a href="mailto:ventas@meic-elind.com">ventas@meic-elind.com</a>. 
+                El equipo de <strong>ELIND SAS</strong> te asesorará en cada paso para brindarte la solución más adecuada.
               </p>
             </div>
           </li>
@@ -529,7 +339,9 @@
     </div>
 
   </div>
-</section><!-- End Frequently Asked Questions Section -->
+</section>
+<!-- End FAQ Section -->
+
 
 <!-- grafico bonito de chart-->
     <section id="comparison-chart" class="comparison-chart section-bg">
@@ -567,86 +379,9 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>¡Forma Parte de Nuestra Comunidad!</h4>
-            <p>Estamos aquí para ayudarte a llevar tu negocio al siguiente nivel. Únete a nosotros en Instagram o youtube y descubre consejos prácticos, videos inspiradores y toda la información que necesitas para crecer y prosperar. También puedes escribiernos a <a href="mailto:ventas@meic-elind.com">ventas@meic-elind.com</a><br><b>¡Tu éxito es nuestra misión!</b></p>
-            <a href="https://www.instagram.com/elindsas/" class="btn btn-primary" target="_blank">Suscríbete en Instagram</a>
-          </div>
-        </div>
-      </div>
-    </div>  
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>ELIND SAS<span>.</span></h3>
-            <p>
-                <i class="bi bi-geo-alt"></i> Calle 25d 84b-32 <br>
-                Bogotá, Código Postal 110931<br>
-                Colombia <br><br>
-                <i class="bi bi-phone"></i> <strong>Teléfono:</strong> +57 313 384 5117<br>
-                <i class="bi bi-envelope"></i> <strong>Email:</strong> ventas@meic-elind.com<br>
-            </p>
-        </div>       
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Enlaces Útiles</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="/index.html#hero">Inicio</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/nuestra-historia.html">Nosotros</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/services.html>Servicios</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/machinery.html">Maquinaria</a></li>
-             <!-- descomentar para poner terminos y condicones
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Nuestros Servicios</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Desarrollo de Producto</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Pruebas de sellado</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Sellado de Fóil</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Diseño y Prototipado</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Maquila de producción</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Síguenos en Redes</h4>
-            <p>Conéctate con nosotros para conocer las últimas novedades en soluciones de sellado, soldadura y maquinaria industrial.<br> 
-              <b>¡Sé parte de nuestra comunidad y lleva tu negocio al siguiente nivel!</b></p>
-            <div class="social-links mt-3">
-              <a href="https://x.com/Elindsas" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="https://www.facebook.com/meicltda.elind" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="https://www.instagram.com/elindsas" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="https://www.youtube.com/user/elindcolombia" target="_blank" class="youtube"><i class="bx bxl-youtube"></i></a>
-              <a href="https://wa.me/573133845117" target="_blank" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container py-4">
-      <div class="copyright">
-        &copy; <strong><span>ELIND SAS</span></strong>. Todos los derechos reservados. Creando innovación en Alta Frecuencia y maquinaria industrial desde Colombia.
-      </div>      
-      <div class="credits">
-DanferAnalytics
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+    <!-- ======= Footer ======= -->
+      <div id="app-footer"></div> 
+    <!-- End Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -660,6 +395,8 @@ DanferAnalytics
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/footer.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

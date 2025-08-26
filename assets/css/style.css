@@ -596,7 +596,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero-servicios {
   width: 100%;
-  height: 75vh;
+  height: 55vh;
   background: url("../img/hero-servicios.jpg") top left;
   background-size: cover;
   position: relative;
@@ -713,6 +713,108 @@ h6 {
     height: 120vh;
   }
 }
+
+/*--------------------------------------------------------------
+# Hero-repuestos Section
+--------------------------------------------------------------*/
+#hero-repuestos {
+  width: 100%;
+  height: 45vh;
+  background: url("../img/hero-repuestos-elind.jpg") top left;
+  background-size: cover;
+  position: relative;
+}
+
+#hero-repuestos:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero-repuestos .container {
+  position: relative;
+}
+
+#hero-repuestos h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #222222;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero-repuestos h1 span {
+  color: #106eea;
+}
+
+#hero-repuestos h2 {
+  color: #555555;
+  margin: 5px 0 30px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#hero-repuestos .btn-get-started {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #106eea;
+}
+
+#hero-repuestos .btn-get-started:hover {
+  background: #247cf0;
+}
+
+#hero-repuestos .btn-watch-video {
+  font-size: 16px;
+  transition: 0.5s;
+  margin-left: 25px;
+  color: #222222;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+#hero-repuestos .btn-watch-video i {
+  color: #106eea;
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+}
+
+#hero-repuestos .btn-watch-video:hover {
+  color: #106eea;
+}
+
+#hero-repuestos .btn-watch-video:hover i {
+  color: #3b8af2;
+}
+
+@media (min-width: 1024px) {
+  #hero-repuestos {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-height: 500px) {
+  #hero-repuestos {
+    height: 120vh;
+  }
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/

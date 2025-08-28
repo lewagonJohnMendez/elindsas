@@ -1,8 +1,398 @@
 {
   "items": [
     {
+  "titulo": "Turbina 1 HP",
+  "descripcion": "Turbina trifásica con protección térmica.",
+  "categoria": "otros",
+  "tags": ["turbina","1hp","trifasica","220v","termico","3500rpm","cono6","base","industrial"],
+  "badge": "Disponible en Stock",
+  "estado": "success",
+  "icon": "bi-wind",
+  "img": "assets/img/repuestos/turbina-1hp-trifasica-220v-3500rpm.jpg",
+  "specs": [
+    "Potencia: 1 HP",
+    "Alimentación: 220V trifásica",
+    "Velocidad: 3500 RPM",
+    "Protección: térmico incorporado",
+    "Incluye: cono de 6” y base de montaje",
+    "Aplicación: ventilación y enfriamiento industrial pesado, en entornos exigentes"
+  ],
+  "datasheet": "assets/docs/turbina-1hp-trifasica-220v-3500rpm.pdf",
+  "lead_time": "Inmediato",
+  "stock": "Disponible"
+}, 
+    {
+  "titulo": "Turbina 1/2 HP bifásica 220V",
+  "descripcion": "Turbina con protección térmica para ventilación de alto desempeño.",
+  "categoria": "otros",
+  "tags": ["turbina","1/2hp","bifasica","220v","termico","3500rpm","cono4","base","industrial"],
+  "badge": "Disponible en Stock",
+  "estado": "success",
+  "icon": "bi-wind",
+  "img": "assets/img/repuestos/turbina-1-2hp-bifasica-220v-3500rpm.jpg",
+  "specs": [
+    "Potencia: 1/2 HP",
+    "Alimentación: 220V bifásica",
+    "Velocidad: 3500 RPM",
+    "Protección: térmico incorporado",
+    "Incluye: cono de 4” y base de montaje",
+    "Aplicación: ventilación y enfriamiento industrial"
+  ],
+  "datasheet": "assets/docs/turbina-1-2hp-bifasica-220v-3500rpm.pdf",
+  "lead_time": "Inmediato",
+  "stock": "Disponible"
+},
+    {
+  "titulo": "Turbina 3/4 HP trifásica 220V con cono y base 3500 RPM",
+  "descripcion": "Turbina industrial para alto rendimiento",
+  "categoria": "otros",
+  "tags": ["turbina","trifasica","220v","3500rpm","3/4hp","cono","base","industrial"],
+  "badge": "Disponible en Stock",
+  "estado": "success",
+  "icon": "bi-wind",
+  "img": "assets/img/repuestos/turbina-3-4hp-trifasica-220v-3500rpm.jpg",
+  "specs": [
+    "Potencia: 3/4 HP",
+    "Alimentación: 220V trifásica",
+    "Velocidad: 3500 RPM",
+    "Incluye: cono y base de montaje",
+    "Aplicación: ventilación y disipación industrial de alta exigencia"
+  ],
+  "datasheet": "assets/docs/turbina-3-4hp-trifasica-220v-3500rpm.pdf",
+  "lead_time": "Inmediato",
+  "stock": "Disponible"
+},
+    {
+  "titulo": "Turbina 110V 2 fases con térmico 3200 RPM",
+  "descripcion": "Turbina con protección térmica",
+  "categoria": "otros",
+  "tags": ["turbina","110v","2fases","termico","3200rpm","industrial","ventilacion"],
+  "badge": "Disponible en Stock",
+  "estado": "success",
+  "icon": "bi-wind",
+  "img": "assets/img/repuestos/turbina-110v-2fases-3200rpm.jpg",
+  "specs": [
+    "Alimentación: 110V",
+    "Fases: 2",
+    "Velocidad: 3200 RPM",
+    "Protección: térmico incorporado",
+    "Aplicación: ventilación y disipación de calor industrial"
+  ],
+  "datasheet": "assets/docs/turbina-110v-2fases-3200rpm.pdf",
+  "lead_time": "Inmediato",
+  "stock": "Disponible"
+},
+    {
+  "titulo": "Turbina 220V 2 fases con térmico 3450 RPM",
+  "descripcion": "Turbina con protección térmica incorporada",
+  "categoria": "otros",
+  "tags": ["turbina","220v","2fases","termico","3450rpm","industrial","ventilacion"],
+  "badge": "Disponible en Stock",
+  "estado": "success",
+  "icon": "bi-wind",
+  "img": "assets/img/repuestos/turbina-220v-2fases-3450rpm.jpg",
+  "specs": [
+    "Alimentación: 220V",
+    "Fases: 2",
+    "Velocidad: 3450 RPM",
+    "Protección: térmico incorporado",
+    "Aplicación: ventilación y disipación de calor industrial"
+  ],
+  "datasheet": "assets/docs/turbina-220v-2fases-3450rpm.pdf",
+  "lead_time": "Inmediato",
+  "stock": "Disponible"
+},
+    {
+  "titulo": "Turbina 110V 1/8” 3450 RPM",
+  "descripcion": "Turbina compacta para ventilación y sistemas de enfriamiento industrial.",
+  "categoria": "otros",
+  "tags": ["turbina","110v","3450rpm","ventilacion","industrial","enfriamiento"],
+  "badge": "Disponible en Stock",
+  "estado": "success",
+  "icon": "bi-wind",
+  "img": "assets/img/repuestos/turbina-110v-3450rpm.jpg",
+  "specs": [
+    "Alimentación: 110V",
+    "Potencia: 1/8 HP",
+    "Velocidad: 3450 RPM",
+    "Aplicación: ventilación y disipación de calor"
+  ],
+  "datasheet": "assets/docs/turbina-110v-3450rpm.pdf",
+  "lead_time": "Inmediato",
+  "stock": "Disponible"
+},
+        {
+      "titulo": "Ventiladores de disipación modelos 1800",
+      "descripcion": "Ventiladores industriales para equipos de 1800 W de alta frecuencia.",
+      "categoria": "otros",
+      "tags": ["ventiladores","disipacion","1800w","altafrecuencia","industrial","cooling"],
+      "badge": "Disponible en Stock",
+      "estado": "success",
+      "icon": "bi-fan",
+      "img": "assets/img/repuestos/ventiladores-1800.jpg",
+      "specs": [
+        "Aplicación: equipos de 1800 W",
+        "Función: disipación de calor y enfriamiento forzado",
+        "Montaje: estándar industrial",
+        "Tipo: ventilador eléctrico de alta resistencia"
+      ],
+      "datasheet": "assets/docs/ventiladores-1800.pdf",
+      "lead_time": "Inmediato",
+      "stock": "Disponible"
+    },
+            {
+          "titulo": "Juego de diodos hasta 10 kW",
+          "descripcion": "Kit de diodos para rectificación en equipos de hasta 10 kW.",
+          "categoria": "otros",
+          "tags": ["diodos","rectificacion","potencia","10kw","industrial","kit"],
+          "badge": "Disponible en Stock",
+          "estado": "success",
+          "icon": "bi-dash-circle-fill",
+          "img": "assets/img/repuestos/juego-diodos-10kw.jpg",
+          "specs": [
+            "Tipo: diodos de potencia para rectificación",
+            "Capacidad: hasta 10 kW",
+            "Aplicación: equipos industriales de gran potencia",
+            "Formato: juego completo para reemplazo"
+          ],
+          "datasheet": "assets/docs/juego-diodos-10kw.pdf",
+          "lead_time": "Inmediato",
+          "stock": "Disponible"
+        },
+          {
+        "titulo": "Diodos rectificadores hasta 3,5 kW",
+        "descripcion": "Kit de diodos para rectificación en equipos industriales",
+        "categoria": "otros",
+        "tags": ["diodos","rectificacion","potencia","3.5kw","industrial","kit"],
+        "badge": "Disponible en Stock",
+        "estado": "success",
+        "icon": "bi-dash-circle",
+        "img": "assets/img/repuestos/juego-diodos-3_5kw.jpg",
+        "specs": [
+          "Tipo: diodos de potencia para rectificación",
+          "Capacidad: hasta 3,5 kW",
+          "Aplicación: equipos industriales",
+          "Formato: juego completo para reemplazo"
+        ],
+        "datasheet": "assets/docs/juego-diodos-3_5kw.pdf",
+        "lead_time": "Inmediato",
+        "stock": "Disponible"
+      },
+              {
+        "titulo": "Condensadores de barril",
+        "descripcion": "Condensadores de alta capacidad para aplicaciones de potencia.",
+        "categoria": "otros",
+        "tags": ["condensadores","barril","altafrecuencia","industrial"],
+        "badge": "Consulta disponibilidad",
+        "estado": "primary",
+        "icon": "bi-circle-half",
+        "img": "assets/img/repuestos/condensadores-barril.jpg",
+        "specs": [
+          "Tipo: condensador de potencia tipo barril",
+          "Capacidad: según requerimiento",
+          "Aplicación: equipos industriales y RF",
+          "Formato: cilíndrico de alta resistencia"
+        ],
+        "datasheet": "assets/docs/condensadores-barril.pdf",
+        "lead_time": "Según disponibilidad",
+        "stock": "Consultar"
+      },
+          {
+        "titulo": "Condensadores de disco",
+        "descripcion": "Condensadores cerámicos de disco disponibles en múltiples valores",
+        "categoria": "otros",
+        "tags": ["condensadores","disco","ceramicos","altafrecuencia","industrial"],
+        "badge": "Consulta disponibilidad",
+        "estado": "primary",
+        "icon": "bi-circle",
+        "img": "assets/img/repuestos/condensadores-disco.jpg",
+        "specs": [
+          "Tipo: condensador cerámico de disco",
+          "Valores: según requerimiento",
+          "Aplicación: circuitos de RF e industriales",
+          "Formato: múltiples capacidades disponibles"
+        ],
+        "datasheet": "assets/docs/condensadores-disco.pdf",
+        "lead_time": "Según disponibilidad",
+        "stock": "Consultar"
+      },
+
+          {
+        "titulo": "Resistencias 3000Ω 200W",
+        "descripcion": "Resistencias de potencia 3000 ohmios x 200W, diseñadas para aplicaciones industriales y de alta carga.",
+        "categoria": "otros",
+        "tags": ["resistencias","3000ohm","200w","potencia","industrial","carga"],
+        "badge": "Disponible en Stock",
+        "estado": "success",
+        "icon": "bi-cpu",
+        "img": "assets/img/repuestos/resistencias-3000ohm-200w.jpg",
+        "specs": [
+          "Resistencia nominal: 3000 Ω",
+          "Potencia: 200 W",
+          "Tipo: resistencia de potencia",
+          "Aplicación: control de carga y disipación"
+        ],
+        "datasheet": "assets/docs/resistencias-3000ohm-200w.pdf",
+        "lead_time": "Inmediato",
+        "stock": "Disponible"
+      },
+        {
+      "titulo": "Reóstato 5Ω 50W",
+      "descripcion": "Reóstato de 5 ohmios y 50W para control de corriente en aplicaciones industriales y de laboratorio.",
+      "categoria": "otros",
+      "tags": ["reostato","resistencia","control","5ohm","50w","industrial"],
+      "badge": "Disponible en Stock",
+      "estado": "success",
+      "icon": "bi-cpu",
+      "img": "assets/img/repuestos/reostato-5ohm-50w.jpg",
+      "specs": [
+        "Resistencia nominal: 5 Ω",
+        "Potencia: 50 W",
+        "Aplicación: control de corriente y ajuste de carga"
+      ],
+      "datasheet": "assets/docs/reostato-5ohm-50w.pdf",
+      "lead_time": "Inmediato",
+      "stock": "Disponible"
+    },
+          {
+        "titulo": "Conexiones de bronce de alta resistencia",
+        "descripcion": "Conexiones en bronce de alta resistencia, para Alta Frecuencia.",
+        "categoria": "otros",
+        "tags": ["conexiones","bronce","altaresistencia","industrial","potencia","rf"],
+        "badge": "Disponible en Stock",
+        "estado": "success",
+        "icon": "bi-plug",
+        "img": "assets/img/repuestos/conexiones-bronce.jpg",
+        "specs": [
+          "Material: bronce de alta resistencia",
+          "Aplicaciones: conexiones eléctricas y RF",
+          "Alta conductividad y durabilidad",
+          "Resistencia superior a desgaste, torsión y corrosión",
+          "se pueden fabricar a medida"
+        ],
+        "datasheet": "assets/docs/conexiones-bronce.pdf",
+        "lead_time": "Inmediato",
+        "stock": "Disponible"
+      },
+          {
+    "titulo": "Miliamperímetro 0–3",
+    "descripcion": "Instrumento para medición de 0 a 3 mA.",
+    "categoria": "control",
+    "tags": ["miliamperimetro","medicion","corriente","0-3mA","instrumento","industrial"],
+    "badge": "Disponible en Stock",
+    "estado": "success",
+    "icon": "bi-speedometer2",
+    "img": "assets/img/repuestos/miliamperimetro-0-3.jpg",
+    "specs": [
+      "Rango de medición: 0–3 mA",
+      "Tipo: analógico de aguja",
+      "Escala: clara y de fácil lectura",
+      "Aplicación: tableros eléctricos e industriales"
+    ],
+    "datasheet": "assets/docs/miliamperimetro-0-3.pdf",
+    "lead_time": "Inmediato",
+    "stock": "Disponible"
+  },
+      {
+    "titulo": "Miliamperímetro 0–5",
+    "descripcion": "Instrumento para medición de 0 a 5 mA.",
+    "categoria": "control",
+    "tags": ["miliamperimetro","medicion","corriente","0-5mA","instrumento","industrial"],
+    "badge": "Disponible en Stock",
+    "estado": "success",
+    "icon": "bi-speedometer2",
+    "img": "assets/img/repuestos/miliamperimetro-0-5.jpg",
+    "specs": [
+      "Rango de medición: 0–5 mA",
+      "Tipo: analógico de aguja",
+      "Escala: clara y de fácil lectura",
+      "Aplicación: tableros eléctricos e industriales"
+    ],
+    "datasheet": "assets/docs/miliamperimetro-0-5.pdf",
+    "lead_time": "Inmediato",
+    "stock": "Disponible"
+  },
+          {
+        "titulo": "Tornillos de nivelación",
+        "descripcion": "Tornillos ajustables de nivelación para mesa de sellado",
+        "categoria": "otros",
+        "tags": ["tornillos","nivelacion","ajustables","industrial","bases"],
+        "badge": "Disponible en Stock",
+        "estado": "success",
+        "icon": "bi-nut",
+        "img": "assets/img/repuestos/tornillos-nivelacion.jpg",
+        "specs": [
+          "Tipo: tornillos de nivelación ajustables",
+          "Aplicación: nivelación de equipos de Alta Frecuencia",
+          "Material: Acero inoxidable y bronce"
+        ],
+        "datasheet": "assets/docs/tornillos-nivelacion.pdf",
+        "lead_time": "Inmediato",
+        "stock": "Disponible"
+      },
+          {
+        "titulo": "Aisladores",
+        "descripcion": "Aisladores industriales de alta resistencia, 51 o 76mm",
+        "categoria": "otros",
+        "tags": ["aisladores","51mm","76mm","altafrecuencia","industrial","eléctrico"],
+        "badge": "Disponible en Stock",
+        "estado": "success",
+        "icon": "bi-shield-check",
+        "img": "assets/img/repuestos/aisladores-51.jpg",
+        "specs": [
+          "Altura: 51 mm o 76mm",
+          "Aplicaciones: aislamiento eléctrico y RF",
+          "Montaje: estándar industrial"
+        ],
+        "datasheet": "assets/docs/aisladores-51.pdf",
+        "lead_time": "Inmediato",
+        "stock": "Disponible"
+      },
+      {
+        "titulo": "Contador indicador digital",
+        "descripcion": "Contador digital para aplicaciones industriales de conteo.",
+        "categoria": "control",
+        "tags": ["contador","digital","lcd","industrial","korea","8digitos"],
+        "badge": "Disponible en Stock",
+        "estado": "success",
+        "icon": "bi-calculator",
+        "img": "assets/img/repuestos/contador-digital-8digitos.jpg",
+        "specs": [
+          "Rango: 0 – 99,999,999",
+          "Pantalla: LCD de 8 dígitos",
+          "Velocidad de conteo: 20 cps",
+          "Funciones: Reset frontal y remoto",
+          "Entrada: contacto seco libre de voltaje",
+          "Alimentación: batería interna 3VDC",
+          "Dimensiones: W48 x H24 mm",
+          "Origen: Korea"
+        ],
+        "datasheet": "assets/docs/contador-digital-8digitos.pdf",
+        "lead_time": "Inmediato",
+        "stock": "Disponible"
+      },
+    {
+        "titulo": "Interruptor de pedal industrial 220V",
+        "descripcion": "Interruptor de pedal tipo industrial a 220V, con capucho de seguridad amarillo para mayor protección.",
+        "categoria": "control",
+        "tags": ["interruptor","pedal","industrial","220V","seguridad"],
+        "badge": "Disponible en Stock",
+        "estado": "success",
+        "icon": "bi-lightning",
+        "img": "assets/img/repuestos/interruptor-pedal-220v.jpg",
+        "specs": [
+          "Voltaje de operación: 220V",
+          "Tipo: interruptor de pedal con capucho de seguridad",
+          "Color: amarillo",
+          "Aplicación: equipos industriales"
+        ],
+        "datasheet": "assets/docs/interruptor-pedal-220v.pdf",
+        "lead_time": "Inmediato",
+        "stock": "Disponible"
+      },
+    {
       "titulo": "Tubo oscilador TB4-1250",
-      "descripcion": "Triodo para aplicaciones de RF (HF), alta frecuencia, vidrio",
+      "descripcion": "Triodo para aplicaciones de RF (HF), alta frecuencia, vidrio.",
       "categoria": "tubos",
       "tags": ["tubos","TB4 1250","triodo","rf","oscilador"],
       "badge": "Consulta disponibilidad",
@@ -11,22 +401,89 @@
       "img": "assets/img/repuestos/tb4-1250.jpg",
       "specs": ["Enfriamiento: forzado por aire", "El TB4-1250 es un triodo de vidrio. Corriente de Filamento de 9.9 Amperios.","La potencia de salida será de hasta 1,8 kW cuando la frecuencia sea inferior a 30 MHz. Se utiliza como oscilador en equipos industriales de calentamiento de alta frecuencia (HF) y como amplificador en equipos de radio."],
       "datasheet": "assets/docs/TB4-1250.pdf",
-      "lead_time": "A cotizar",
+      "lead_time": "Según disponibilidad",
       "stock": "Consultar"
+    },
+    {
+      "titulo": "Timer 0 – 10 seg",
+      "descripcion": "Temporizador electrónico ajustable para control de ciclos en equipos industriales.",
+      "categoria": "control",
+      "tags": ["timer","control","automatizacion","ajustable","industrial"],
+      "badge": "Disponible en Stock",
+      "estado": "success",
+      "icon": "bi-clock-history",
+      "img": "assets/img/repuestos/timer-0-10seg.jpg",
+      "specs": [
+        "Rango de ajuste: 0 – 10 segundos",
+        "Tipo: electrónico de precisión",
+        "Montaje: panel frontal estándar"
+      ],
+      "lead_time": "En stock",
+      "stock": "Disponible"
     },
         {
       "titulo": "Tubo oscilador 833C",
       "descripcion": "Triodo de potencia para osciladores RF (HF), vidrio.",
       "categoria": "tubos",
       "tags": ["tubos","833C","triodo","rf","oscilador"],
-      "badge": "Consulta disponibilidad",
-      "estado": "primary",
+      "badge": "Disponible en Stock",
+      "estado": "success",
       "icon": "bi-cpu",
       "img": "assets/img/repuestos/833C.jpg",
       "specs": ["Enfriamiento: forzado por aire", "El tubo 833C es un triodo de vidrio. Corriente de Filamento de 9.9 Amperios.", "La potencia de salida será de hasta 1,8 kW cuando la frecuencia sea inferior a 30 MHz. Se utiliza como oscilador en equipos industriales de calentamiento de alta frecuencia (HF) y como amplificador en equipos de radio."],
       "datasheet": "assets/docs/833c.pdf",
-      "lead_time": "A cotizar",
+      "lead_time": "Según disponibilidad",
       "stock": "Consultar"
+    },
+    {
+      "titulo": "Pulsadores rojos y verdes",
+      "descripcion": "Botones de control industrial en colores rojo y verde. Resistentes y confiables para tableros eléctricos.",
+      "categoria": "control",
+      "tags": ["pulsadores","botones","control","industrial","tableros"],
+      "badge": "Disponibles en stock",
+      "estado": "success",
+      "icon": "bi-toggle-on",
+      "img": "assets/img/repuestos/pulsadores-rojo-verde.jpg",
+      "specs": [
+        "Colores: rojo y verde",
+        "Tipo: pulsador momentáneo",
+        "Montaje: panel estándar 22 mm"
+      ],
+      "datasheet": "assets/docs/pulsadores-rojo-verde.pdf",
+      "lead_time": "En stock",
+      "stock": "Disponible"
+    },
+        {
+      "titulo": "Tubo oscilador 3CX2500F3",
+      "descripcion": "Triodo de potencia para osciladores RF (HF), vidrio.",
+      "categoria": "tubos",
+      "tags": ["tubos","3CX2500F3","triodo","rf","oscilador"],
+      "badge": "Disponible en Stock",
+      "estado": "success",
+      "icon": "bi-cpu",
+      "img": "assets/img/repuestos/3CX2500F3.jpg",
+      "specs": ["Enfriamiento: forzado por aire", "El tubo 3CX2500F3 es un triodo de ánodo externo con construcción cerámica-metal. Diseñado para aplicaciones de calentamiento industrial por RF. Filamento 7.5 Voltios.","La potencia de salida será de hasta 7,5 kW cuando la frecuencia sea inferior a 30 MHz. Se utiliza como oscilador en equipos industriales de calentamiento de alta frecuencia (HF) y como amplificador en equipos de radio."],
+      "datasheet": "assets/docs/3CX2500F3.pdf",
+      "lead_time": "Según disponibilidad",
+      "stock": "Consultar"
+    },
+    {
+      "titulo": "Pulsador de emergencia",
+      "descripcion": "Botón de paro de emergencia tipo hongo, ideal para tableros y equipos industriales.",
+      "categoria": "control",
+      "tags": ["pulsador","emergencia","seguridad","control","industrial"],
+      "badge": "Disponible en Stock",
+      "estado": "danger",
+      "icon": "bi-exclamation-octagon",
+      "img": "assets/img/repuestos/pulsador-emergencia.jpg",
+      "specs": [
+        "Tipo: botón de paro de emergencia (mushroom)",
+        "Montaje: panel estándar",
+        "Color: rojo"
+      ],
+      "datasheet": "assets/docs/pulsador-emergencia.pdf",
+      "lead_time": "Inmediato",
+      "stock": "Disponible"
     },
         {
       "titulo": "Tubo oscilador NL 5557",
@@ -37,11 +494,52 @@
       "estado": "primary",
       "icon": "bi-cpu",
       "img": "assets/img/repuestos/nl5557.jpg",
-      "specs": ["Enfriamiento: forzado por aire", "El tubo 833C es un triodo de vidrio. Corriente de Filamento de 9.9 Amperios.", "La potencia de salida será de hasta 1,8 kW cuando la frecuencia sea inferior a 30 MHz. Se utiliza como oscilador en equipos industriales de calentamiento de alta frecuencia (HF) y como amplificador en equipos de radio."],
+      "specs": ["Enfriamiento: disipación por aire", "El tubo nl5557 es un Tiratron (Thyratron) de vidrio. Filamento de 5.5 Amperios / 2,5 V", "La potencia de salida será de hasta 1,5 kW cuando la frecuencia sea inferior a 20 MHz. Se utiliza como oscilador en equipos industriales de calentamiento de alta frecuencia (HF) y como amplificador en equipos de radio."],
       "datasheet": "assets/docs/nl5557.pdf",
-      "lead_time": "A cotizar",
+      "lead_time": "Según disponibilidad",
       "stock": "Consultar"
     },
+    {
+        "titulo": "Selector 22 mm 3 posiciones",
+        "descripcion": "Selector tipo muletilla de 22 mm, con 3 posiciones y retorno automático al centro.",
+        "categoria": "control",
+        "tags": ["selector","muletilla","control","industrial","22mm"],
+        "badge": "Disponible en Stock",
+        "estado": "success",
+        "icon": "bi-sliders",
+        "img": "assets/img/repuestos/selector-22mm-3pos.jpg",
+        "specs": [
+          "Tipo: selector con muletilla",
+          "Dimensión: 22 mm",
+          "Posiciones: 3 (con retorno al centro)",
+          "Montaje: panel estándar"
+        ],
+        "datasheet": "assets/docs/selector-22mm-3pos.pdf",
+        "lead_time": "Inmediato",
+        "stock": "Disponible"
+      },
+
+      {
+        "titulo": "Selector 22 mm 2 posiciones NA",
+        "descripcion": "Selector tipo muletilla de 22 mm, 2 posiciones fijas con contacto normalmente abierto.",
+        "categoria": "control",
+        "tags": ["selector","muletilla","2posiciones","NA","control","22mm","industrial"],
+        "badge": "Disponible en Stock",
+        "estado": "success",
+        "icon": "bi-toggle2-on",
+        "img": "assets/img/repuestos/selector-22mm-2pos.jpg",
+        "specs": [
+          "Tipo: selector con muletilla",
+          "Dimensión: 22 mm",
+          "Posiciones: 2 (fijas)",
+          "Contacto: normalmente abierto (NO)",
+          "Montaje: panel estándar"
+        ],
+        "datasheet": "assets/docs/selector-22mm-2pos.pdf",
+        "lead_time": "Inmediato",
+        "stock": "Disponible"
+      },
+
         {
       "titulo": "Tubo oscilador TB3-750",
       "descripcion": "Triodo de potencia para osciladores RF de HF.",
@@ -51,87 +549,91 @@
       "estado": "primary",
       "icon": "bi-cpu",
       "img": "assets/img/repuestos/TB3-750.jpg",
-      "specs": ["Enfriamiento: forzado", "Zócalo: Eimac-compatible"],
+      "specs":  ["Enfriamiento: disipación por aire", "El tubo TB3-750 es un Tiratron (Thyratron) de vidrio. Filamento de 5.5 Amperios / 2,5 V", "La potencia de salida será de hasta 1,5 kW cuando la frecuencia sea inferior a 20 MHz. Se utiliza como oscilador en equipos industriales de calentamiento de alta frecuencia (HF) y como amplificador en equipos de radio."],
       "datasheet": "assets/docs/TB3-750.pdf",
-      "lead_time": "A cotizar",
+      "lead_time": "Según disponibilidad",
       "stock": "Consultar"
     },
+    {
+    "titulo": "Timer 0 – 30 seg",
+    "descripcion": "Temporizador electrónico de rango extendido para control preciso de ciclos industriales.",
+    "categoria": "control",
+    "tags": ["timer","control","otro","ajustable","industrial"],
+    "badge": "Disponible en Stock",
+    "estado": "success",
+    "icon": "bi-clock-history",
+    "img": "assets/img/repuestos/timer-0-30seg.jpg",
+    "specs": [
+      "Rango de ajuste: 0 – 30 segundos",
+      "Tipo: electrónico de precisión",
+      "Montaje: panel frontal estándar"
+    ],
+    "lead_time": "En stock",
+    "stock": "Disponible"
+  },
+
         {
-      "titulo": "Tubo oscilador 3CX2500F3",
-      "descripcion": "Triodo de potencia para osciladores RF de HF.",
+      "titulo": "Tubo oscilador ax7t85rb",
+      "descripcion": "Triodo para aplicaciones de RF (HF), alta frecuencia, vidrio",
       "categoria": "tubos",
-      "tags": ["tubos","3cx2500f3","triodo","rf","oscilador"],
+      "tags": ["tubos","ax7t85rb","triodo","rf","oscilador"],
       "badge": "Consulta disponibilidad",
-      "estado": "warning",
+      "estado": "primary",
       "icon": "bi-cpu",
-      "img": "assets/img/repuestos/3cx2500f3.jpg",
-      "specs": ["Enfriamiento: forzado", "Zócalo: Eimac-compatible"],
-      "datasheet": "assets/docs/3cx2500f3.pdf",
-      "lead_time": "A cotizar",
+      "img": "assets/img/repuestos/ax7t85rb.jpg",
+      "specs": ["Enfriamiento: forzado por aire", "El Amperex AX7T85RB es un triodo de ánodo externo con construcción cerámica-metal. Diseñado para aplicaciones de calentamiento industrial por RF. Filamento 6.5 Voltios.","La potencia de salida será de hasta 3,5 kW. Se utiliza como oscilador en equipos industriales de calentamiento de alta frecuencia (HF) y como amplificador en equipos de radio."],
+      "datasheet": "assets/docs/AX7T85RB.pdf",
+      "lead_time": "Según disponibilidad",
       "stock": "Consultar"
     },
-        {
-      "titulo": "Tubo oscilador 3CX2500F3",
-      "descripcion": "Triodo de potencia para osciladores RF de HF.",
-      "categoria": "tubos",
-      "tags": ["tubos","3cx2500f3","triodo","rf","oscilador"],
-      "badge": "Consulta disponibilidad",
-      "estado": "warning",
-      "icon": "bi-cpu",
-      "img": "assets/img/repuestos/3cx2500f3.jpg",
-      "specs": ["Enfriamiento: forzado", "Zócalo: Eimac-compatible"],
-      "datasheet": "assets/docs/3cx2500f3.pdf",
-      "lead_time": "A cotizar",
-      "stock": "Consultar"
-    },
-        {
-      "titulo": "Tubo oscilador 3CX2500F3",
-      "descripcion": "Triodo de potencia para osciladores RF de HF.",
-      "categoria": "tubos",
-      "tags": ["tubos","3cx2500f3","triodo","rf","oscilador"],
-      "badge": "Consulta disponibilidad",
-      "estado": "warning",
-      "icon": "bi-cpu",
-      "img": "assets/img/repuestos/3cx2500f3.jpg",
-      "specs": ["Enfriamiento: forzado", "Zócalo: Eimac-compatible"],
-      "datasheet": "assets/docs/3cx2500f3.pdf",
-      "lead_time": "A cotizar",
-      "stock": "Consultar"
-    },
-    
     {
       "titulo": "Tubo oscilador 3CX15000H3",
       "descripcion": "Triodo de alta potencia para equipos industriales.",
       "categoria": "tubos",
-      "tags": ["tubos","3cx15000h3","alta-potencia","rf"],
+      "tags": ["tubos","3CX15000H3","alta-potencia","rf"],
       "badge": "Bajo pedido",
-      "estado": "warning",
-      "icon": "bi-cpu",
-      "img": "assets/img/repuestos/3cx15000h3.jpg",
-      "specs": ["Clase: C", "Aplicación: Osciladores HF"],
-      "datasheet": "assets/docs/3cx15000h3.pdf",
-      "lead_time": "2–4 semanas",
-      "stock": "Bajo"
-    },
-    {
-      "titulo": "Tubo 833C (equivalentes)",
-      "descripcion": "Triodo para aplicaciones de RF clásicas y equivalentes compatibles.",
-      "categoria": "tubos",
-      "tags": ["tubos","833c","equivalente","rf"],
-      "badge": "Consulta equivalencias",
       "estado": "secondary",
       "icon": "bi-cpu",
-      "img": "assets/img/repuestos/833c.jpg",
-      "specs": ["Voltaje placa: alto", "Uso: RF/Audio industrial"],
-      "datasheet": "assets/docs/833c.pdf",
-      "lead_time": "A cotizar",
+      "img": "assets/img/repuestos/3CX15000H3.jpg",
+      "specs": ["Enfriamiento: forzado por aire", "El tubo 3CX15000H3 es un triodo de ánodo externo con construcción cerámica-metal. Diseñado para aplicaciones de calentamiento industrial por RF. Filamento 6,3 Voltios.","La potencia de salida será de hasta 15 kW cuando la frecuencia sea inferior a 30 MHz y la temperatura del tubo no supera los 250°C. Se utiliza como oscilador en equipos industriales de calentamiento de alta frecuencia (HF) MUY IMPORTANTE UN BUEN FLUJO DE AIRE"],
+      "datasheet": "assets/docs/3CX15000H3.pdf",
+      "lead_time": "1-2 semanas",
+      "stock": "Bajo"
+    },
+      {
+      "titulo": "Tubo oscilador TB5-2500",
+      "descripcion": "Triodo para aplicaciones de RF (HF), alta frecuencia, vidrio.",
+      "categoria": "tubos",
+      "tags": ["tubos","TB5-2500","triodo","rf","oscilador"],
+      "badge": "Bajo pedido",
+      "estado": "secondary",
+      "icon": "bi-cpu",
+      "img": "assets/img/repuestos/tb5-2500.jpg",
+      "specs": ["Enfriamiento: forzado por aire", "El TB5-2500 es un triodo de vidrio. Corriente de Filamento de 9.9 Amperios.","La potencia de salida será de hasta 1,8 kW cuando la frecuencia sea inferior a 30 MHz. Se utiliza como oscilador en equipos industriales de calentamiento de alta frecuencia (HF) y como amplificador en equipos de radio."],
+      "datasheet": "assets/docs/TB5-2500.pdf",
+      "lead_time": "Según disponibilidad",
+      "stock": "Bajo"
+    },
+        {
+      "titulo": "¿No encuentras el Tubo, Triodo que buscas? ",
+      "descripcion": "Pregúntanos por Tubos o Triodos que no encuentras.",
+      "categoria": "tubos",
+      "tags": ["tubos","3CX15000H3","alta-potencia","rf"],
+      "badge": "Bajo pedido",
+      "estado": "secondary",
+      "icon": "bi-lightbulb-fill",
+      "img": "assets/img/repuestos/especifico.jpg",
+      "specs": ["¿No encuentras el componente que buscas? Consúltanos sin dudarlo.",
+        "Contamos con un inventario amplio y acceso directo a los principales fabricantes del mundo.",
+        "Más de 48 años de experiencia nos respaldan para darte la mejor solución."],
+      "datasheet": "assets/docs/3CX15000H3.pdf",
+      "lead_time": "1-2 semanas",
       "stock": "Consultar"
     },
-
     {
       "titulo": "Condensadores de barril",
-      "descripcion": "Electrodos en bronce/aluminio para sellado de Altafrecuencia",
-      "categoria": "electrodos",
+      "descripcion": "Electrodos en bronce/aluminio para sellado de Altafrecuencia.",
+      "categoria": "potencia",
       "tags": ["electrodos","hf","pvc","eva","tpu","pu","sellado","altafrecuencia"],
       "badge": "Entrega 5–10 días",
       "estado": "secondary",
@@ -145,7 +647,7 @@
     {
       "titulo": "Electrodo con cuchilla integrada",
       "descripcion": "Electrodo con filo de corte para sellado + troquelado en un paso.",
-      "categoria": "electrodos",
+      "categoria": "electrodo",
       "tags": ["electrodos","troquelado","corte","bolsillos","perimetral"],
       "badge": "Bajo plano",
       "estado": "info",
@@ -160,7 +662,7 @@
     {
       "titulo": "Aislante de mesa HF (PTFE)",
       "descripcion": "Lámina dieléctrica en PTFE para mesas de sellado.",
-      "categoria": "aislantes",
+      "categoria": "otros",
       "tags": ["aislantes","ptfe","teflon","mesa","hf"],
       "badge": "Corte a medida",
       "estado": "success",
@@ -174,7 +676,7 @@
     {
       "titulo": "Aislante fibra vidrio fenólico",
       "descripcion": "Dieléctrico rígido para alta temperatura y estabilidad mecánica.",
-      "categoria": "aislantes",
+      "categoria": "otros",
       "tags": ["aislantes","fibra","fenolico","mesa","hf"],
       "badge": "Corte CNC",
       "estado": "info",
@@ -185,54 +687,10 @@
       "lead_time": "4–7 días",
       "stock": "Medio"
     },
-
-    {
-      "titulo": "Capacitor cerámico RF 5 kV",
-      "descripcion": "Capacitor para tanque/acople en osciladores HF.",
-      "categoria": "cap",
-      "tags": ["cap","capacitores","ceramicos","rf","tanque"],
-      "badge": "OEM/Equivalentes",
-      "estado": "secondary",
-      "icon": "bi-ui-checks-grid",
-      "img": "assets/img/repuestos/capacitor-5kv.jpg",
-      "specs": ["Tensión: 5 kV", "Capacitancia: según diseño"],
-      "datasheet": "assets/docs/capacitor-5kv.pdf",
-      "lead_time": "A cotizar",
-      "stock": "Consultar"
-    },
-    {
-      "titulo": "Capacitor cerámico RF 10 kV",
-      "descripcion": "Capacitor de alta tensión para acople/ajuste fino.",
-      "categoria": "cap",
-      "tags": ["cap","ceramicos","10kv","rf"],
-      "badge": "Bajo pedido",
-      "estado": "secondary",
-      "icon": "bi-ui-checks-grid",
-      "img": "assets/img/repuestos/capacitor-10kv.jpg",
-      "specs": ["Tensión: 10 kV", "Baja pérdida (Q alto)"],
-      "datasheet": "assets/docs/capacitor-10kv.pdf",
-      "lead_time": "1–3 semanas",
-      "stock": "Bajo"
-    },
-
-    {
-      "titulo": "Placa de control EL-CTRL-02",
-      "descripcion": "Módulo de control para máquinas ELIND (revisión 02).",
-      "categoria": "modulos",
-      "tags": ["modulos","placas","control","pcb","logic"],
-      "badge": "Refacción original",
-      "estado": "info",
-      "icon": "bi-motherboard",
-      "img": "assets/img/repuestos/placa-control.jpg",
-      "specs": ["Compatibilidad: líneas SEM*", "Conectores: estandarizados"],
-      "datasheet": "assets/docs/el-ctrl-02.pdf",
-      "lead_time": "5–12 días",
-      "stock": "Medio"
-    },
     {
       "titulo": "Fuente de poder 24V/10A",
       "descripcion": "Fuente industrial para lógica, relés y periféricos.",
-      "categoria": "modulos",
+      "categoria": "otros",
       "tags": ["modulos","fuente","24v","10a","potencia"],
       "badge": "Entrega rápida",
       "estado": "success",
@@ -242,35 +700,6 @@
       "datasheet": "assets/docs/ps-24v10a.pdf",
       "lead_time": "2–3 días",
       "stock": "Alto"
-    },
-
-    {
-      "titulo": "Regleta cerámica 10P",
-      "descripcion": "Regleta de alta resistencia para conexiones de potencia.",
-      "categoria": "otros",
-      "tags": ["regletas","conexiones","ceramica","accesorios"],
-      "badge": "Entrega rápida",
-      "estado": "secondary",
-      "icon": "bi-grid",
-      "img": "assets/img/repuestos/regleta-10p.jpg",
-      "specs": ["Posiciones: 10", "Temp: alta", "Aislamiento: cerámico"],
-      "datasheet": "assets/docs/regleta-10p.pdf",
-      "lead_time": "2–4 días",
-      "stock": "Alto"
-    },
-    {
-      "titulo": "Diodo de potencia 1200V",
-      "descripcion": "Diodo rápido para rectificación en fuentes de HF.",
-      "categoria": "otros",
-      "tags": ["diodos","potencia","rectificador","semiconductores"],
-      "badge": "Stock limitado",
-      "estado": "secondary",
-      "icon": "bi-lightning",
-      "img": "assets/img/repuestos/diodo-1200v.jpg",
-      "specs": ["Vrrm: 1200V", "If: 30A", "Recovery: fast"],
-      "datasheet": "assets/docs/diodo-1200v.pdf",
-      "lead_time": "3–5 días",
-      "stock": "Bajo"
     },
     {
       "titulo": "Fusible industrial HV",
@@ -289,7 +718,7 @@
     {
       "titulo": "Transformador de alta (tanque)",
       "descripcion": "Transformador para tanque RF/ajuste de impedancias.",
-      "categoria": "otros",
+      "categoria": "transformador",
       "tags": ["transformador","tanque","rf","acople"],
       "badge": "Bajo pedido",
       "estado": "warning",
@@ -315,20 +744,6 @@
       "stock": "Alto"
     },
     {
-      "titulo": "Ventilador industrial 120 mm",
-      "descripcion": "Ventilación forzada para gabinetes y tubos.",
-      "categoria": "otros",
-      "tags": ["ventilador","cooling","120mm","forzado"],
-      "badge": "Stock permanente",
-      "estado": "success",
-      "icon": "bi-fan",
-      "img": "assets/img/repuestos/ventilador-120.jpg",
-      "specs": ["Tensión: 220VAC/110VAC", "Flujo: alto"],
-      "datasheet": "assets/docs/ventilador-120.pdf",
-      "lead_time": "1–2 días",
-      "stock": "Alto"
-    },
-    {
       "titulo": "Porta-electrodo universal",
       "descripcion": "Soporte para fijación rápida de electrodos en mesa.",
       "categoria": "otros",
@@ -340,20 +755,6 @@
       "specs": ["Compatibilidad: universal", "Material: acero/bronce"],
       "datasheet": "assets/docs/porta-electrodo.pdf",
       "lead_time": "4–6 días",
-      "stock": "Medio"
-    },
-    {
-      "titulo": "Mica/espaciador dieléctrico",
-      "descripcion": "Mica técnica para separación y aislamiento térmico.",
-      "categoria": "otros",
-      "tags": ["mica","espaciador","dieletrico","aislamiento"],
-      "badge": "Corte a medida",
-      "estado": "info",
-      "icon": "bi-layers",
-      "img": "assets/img/repuestos/mica.jpg",
-      "specs": ["Espesores: 0.2–2 mm", "Rigidez dieléctrica: alta"],
-      "datasheet": "assets/docs/mica-espaciador.pdf",
-      "lead_time": "3–5 días",
       "stock": "Medio"
     }
   ]

@@ -6,6 +6,11 @@
   const DEBOUNCE_DELAY = 180;
   const PLACEHOLDER_IMAGE = "assets/img/repuestos/placeholder.svg";
   const FALLBACK_ICON = "bi-tools";
+  const PAGE_SIZE = 9;              // <-- ítems por página (ajústalo a gusto)
+
+  // Estado de paginación/filtrado
+  let matchedIdx = [];               // índices filtrados del catálogo
+  let currentPage = 1;               // página actual (1-based)
 
   // ===========================
   // Helpers
@@ -31,21 +36,24 @@
   function getParamsFromHash() {
     const hash = location.hash.startsWith("#") ? location.hash.slice(1) : location.hash;
     const params = new URLSearchParams(hash);
-    return {
-      cat: params.get("cat") || "*",
-      q: params.get("q") || ""
-    };
+    return { cat: params.get("cat") || "*", q: params.get("q") || "" };
   }
 
   function updateHash(cat, q) {
-    const params = new URLSearchParams();
-    params.set("cat", cat || "*");
-    if (q) params.set("q", q);
-    const newHash = `#${params.toString()}`;
-    if (location.hash !== newHash) {
-      history.replaceState(null, "", newHash);
-    }
+  const isDefault = (!cat || cat === '*') && (!q || q === '');
+  const base = location.pathname + location.search;
+
+  if (isDefault) {
+    // Limpia el hash si estamos en estado por defecto
+    if (location.hash) history.replaceState(null, '', base);
+    return;
   }
+
+  const params = new URLSearchParams();
+  params.set('cat', cat || '*');
+  if (q) params.set('q', q);
+  history.replaceState(null, '', base + '#' + params.toString());
+}
 
   // ===========================
   // Main
@@ -58,7 +66,8 @@
     const input = document.getElementById("searchInput");
     const clearBtn = document.getElementById("clearSearchBtn");
     const partName = document.getElementById("partName");
-    const countEl = document.getElementById("partsCount"); // opcional (si existe en el HTML)
+    const countEl = document.getElementById("partsCount");         // opcional
+    const paginationEl = document.getElementById("partsPagination");// requerido para paginación
 
     // Estado
     let catalogo = [];
@@ -74,12 +83,10 @@
       .then((data) => {
         if (!data || !Array.isArray(data.items)) throw new Error("Formato de datos inválido");
         catalogo = data.items.map(validateItem);
-        render(catalogo);
-        bindImageFallbacks(); // fallback de imágenes
+        render(catalogo);            // inicializa matchedIdx y pinta página 1
         hookFiltersAndSearch();
         hookDetail();
-        initFromHash();
-        updateCount(visibleCardsCount(), totalCardsCount());
+        initFromHash();              // aplica filtros de la URL si hay
       })
       .catch((err) => {
         console.error("Error cargando repuestos:", err);
@@ -94,7 +101,6 @@
         titulo: item.titulo || "Repuesto sin nombre",
         descripcion: item.descripcion || "",
         categoria: item.categoria || "otros",
-        sku: item.sku || "",
         tags: Array.isArray(item.tags) ? item.tags : [],
         img: item.img || "",
         icon: item.icon || FALLBACK_ICON,
@@ -108,7 +114,7 @@
     }
 
     // ===========================
-    // UI: errores / empty
+    // UI: errores / empty / contador
     // ===========================
     function showError(message) {
       grid.innerHTML = `
@@ -126,7 +132,7 @@
         empty.id = "partsEmptyState";
         empty.className = "text-center text-muted py-4 d-none";
         empty.innerHTML = `<i class="bi bi-search" style="font-size:2rem;"></i>
-                           <p class="mt-2 small">No encontramos resultados con ese filtro 🔎</p>`;
+                           <p class="mt-2 small">No encontramos resultados con ese filtro, consulta a nuestro equipo por correo electrónico.</p>`;
         grid.insertAdjacentElement("afterend", empty);
       }
       return empty;
@@ -137,30 +143,59 @@
       empty.classList.toggle("d-none", !show);
     }
 
+    function updateCount(visible, total) {
+      if (!countEl) return;
+      countEl.textContent = `Mostrando ${visible} de ${total}`;
+      countEl.setAttribute("aria-live", "polite");
+      countEl.setAttribute("role", "status");
+    }
+
     // ===========================
-    // Render
+    // Render + Paginación
     // ===========================
     function render(items) {
-      if (!Array.isArray(items) || items.length === 0) {
-        grid.innerHTML = "";
+      // índices sin filtros (todo)
+      matchedIdx = items.map((_, i) => i);
+      currentPage = 1;
+      paintCurrentPage();
+
+      // Delegación global: clics en el grid (cotizar/detalle) — one-shot con rearmado
+      grid.addEventListener("click", handleGridClick, { once: true });
+    }
+
+    function paintCurrentPage() {
+      // limpiar grid
+      grid.innerHTML = "";
+
+      if (matchedIdx.length === 0) {
         toggleEmptyState(true);
+        updateCount(0, 0);
+        buildPagination(0, 0);
         return;
       }
       toggleEmptyState(false);
 
-      grid.innerHTML = items.map(toCard).join("");
+      const total = matchedIdx.length;
+      const totalPages = Math.ceil(total / PAGE_SIZE);
+      currentPage = Math.max(1, Math.min(currentPage, totalPages));
 
-      // Delegación global: clics en el grid (cotizar)
-      grid.addEventListener("click", handleGridClick, { once: true });
+      const start = (currentPage - 1) * PAGE_SIZE;
+      const end = Math.min(start + PAGE_SIZE, total);
+
+      const html = matchedIdx.slice(start, end).map(i => toCard(catalogo[i])).join("");
+      grid.innerHTML = html;
+
+      bindImageFallbacks();
+
+      updateCount(end - start, total);
+      buildPagination(currentPage, totalPages);
     }
 
     function toCard(item) {
-      const category = item.categoria || "otros";
-      const tags = item.tags.join(" ").toLowerCase();
-      const searchText = `${item.titulo} ${item.descripcion} ${item.sku}`.toLowerCase();
-      const badgeClass = item.badge
-        ? `bg-${item.estado}-subtle text-${item.estado} border stock-badge`
-        : "";
+      const category   = item.categoria || "otros";
+      const tags       = (item.tags || []).join(" ").toLowerCase();
+      const searchText = `${item.titulo} ${item.descripcion}`.toLowerCase();
+      const badgeClass = item.badge ? `bg-${item.estado}-subtle text-${item.estado} border stock-badge` : "";
 
       const imageHtml = `
         <span class="d-inline-block" style="width:60px;height:60px;">
@@ -189,7 +224,7 @@
           <div class="d-flex gap-2">
             <button class="btn btn-outline-secondary btn-sm"
                     data-action="detalle"
-                    data-id="${escapeHtml(item.sku || item.titulo)}"
+                    data-id="${escapeHtml(item.titulo)}"
                     aria-label="Ver detalles de ${escapeHtml(item.titulo)}">
               Ver detalle
             </button>
@@ -199,7 +234,7 @@
                     data-bs-toggle="modal"
                     data-bs-target="#quoteModal"
                     aria-label="Solicitar cotización de ${escapeHtml(item.titulo)}">
-              Pedir por código
+              Consulta por correo
             </button>
           </div>
         </div>
@@ -219,11 +254,74 @@
       });
     }
 
+    function buildPagination(page, totalPages) {
+      if (!paginationEl) return;
+      if (!totalPages || totalPages <= 1) {
+        paginationEl.classList.add("d-none");
+        paginationEl.innerHTML = "";
+        return;
+      }
+      paginationEl.classList.remove("d-none");
+
+      const makeItem = (label, p, disabled = false, active = false, aria = "") => `
+        <li class="page-item ${disabled ? "disabled" : ""} ${active ? "active" : ""}">
+          <a class="page-link" href="#" data-page="${p}" ${aria}>${label}</a>
+        </li>`;
+
+      let html = "";
+      // Prev
+      html += makeItem("&laquo;", page - 1, page === 1, false, 'aria-label="Anterior"');
+
+      // ventana de números (máx 7)
+      const max = 7;
+      let start = Math.max(1, page - Math.floor(max / 2));
+      let end = Math.min(start + max - 1, totalPages);
+      start = Math.max(1, end - max + 1);
+
+      if (start > 1) {
+        html += makeItem("1", 1, false, page === 1);
+        if (start > 2) html += `<li class="page-item disabled"><span class="page-link">…</span></li>`;
+      }
+
+      for (let p = start; p <= end; p++) {
+        html += makeItem(String(p), p, false, page === p);
+      }
+
+      if (end < totalPages) {
+        if (end < totalPages - 1) html += `<li class="page-item disabled"><span class="page-link">…</span></li>`;
+        html += makeItem(String(totalPages), totalPages, false, page === totalPages);
+      }
+
+      // Next
+      html += makeItem("&raquo;", page + 1, page === totalPages, false, 'aria-label="Siguiente"');
+
+      paginationEl.innerHTML = html;
+
+      // Bind clicks
+      paginationEl.querySelectorAll("a.page-link").forEach((a) => {
+        a.addEventListener("click", (ev) => {
+          ev.preventDefault();
+          const p = parseInt(a.getAttribute("data-page"), 10);
+          if (isNaN(p)) return;
+          goToPage(p);
+        });
+      });
+    }
+
+    function goToPage(p) {
+      const totalPages = Math.ceil(matchedIdx.length / PAGE_SIZE);
+      currentPage = Math.max(1, Math.min(p, totalPages));
+      paintCurrentPage();
+      document.getElementById("partsGrid")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    // ===========================
+    // Delegación de clicks del grid
+    // ===========================
     function handleGridClick(e) {
       const btn = e.target.closest("[data-action]");
       if (!btn) {
-        // rearmar el listener si el click no fue en botón (solo una vez)
-        grid.addEventListener("click", handleGridClick, { once: true });
+        grid.addEventListener("click", handleGridClick, { once: true }); // rearmar si no fue botón
         return;
       }
       const action = btn.getAttribute("data-action");
@@ -277,7 +375,7 @@
         setClearBtnVisibility();
       }
 
-      // Atajos UX finos (opcional)
+      // Atajos UX
       document.addEventListener("keydown", (ev) => {
         if ((ev.ctrlKey || ev.metaKey) && ev.key === "/") {
           ev.preventDefault();
@@ -307,46 +405,27 @@
       currentFilter = filter;
     }
 
+    // Recalcula coincidencias (con catálogo) y repinta página 1
     function applyFilters() {
-      const cards = Array.from(grid.querySelectorAll(":scope > div"));
-      let visibleCount = 0;
+      const search = currentSearch;
+      const filter = currentFilter;
 
-      cards.forEach((card) => {
-        const category = card.getAttribute("data-category") || "";
-        const tags = card.getAttribute("data-tags") || "";
-        const searchText = card.getAttribute("data-search") || "";
+      matchedIdx = [];
+      for (let i = 0; i < catalogo.length; i++) {
+        const item = catalogo[i];
+        const category   = (item.categoria || "").toLowerCase();
+        const tags       = (item.tags || []).join(" ").toLowerCase();
+        const searchText = `${item.titulo} ${item.descripcion}`.toLowerCase();
 
-        const categoryMatch =
-          currentFilter === "*" || category === currentFilter || tags.includes(currentFilter);
-        const searchMatch =
-          !currentSearch || tags.includes(currentSearch) || searchText.includes(currentSearch);
+        const categoryMatch = filter === "*" || category === filter || tags.includes(filter);
+        const searchMatch   = !search || tags.includes(search) || searchText.includes(search);
 
-        const show = categoryMatch && searchMatch;
-        card.style.display = show ? "" : "none";
-        if (show) visibleCount++;
-      });
+        if (categoryMatch && searchMatch) matchedIdx.push(i);
+      }
 
-      toggleEmptyState(visibleCount === 0);
+      currentPage = 1;
+      paintCurrentPage();
       updateHash(currentFilter, currentSearch);
-      updateCount(visibleCount, cards.length);
-    }
-
-    function visibleCardsCount() {
-      return Array.from(grid.querySelectorAll(":scope > div")).filter(
-        (c) => c.style.display !== "none"
-      ).length;
-    }
-
-    function totalCardsCount() {
-      return grid.querySelectorAll(":scope > div").length;
-    }
-
-    function updateCount(visible, total) {
-      if (!countEl) return;
-      countEl.textContent = `Mostrando ${visible} de ${total}`;
-      // Accesibilidad: anunciar cambios
-      countEl.setAttribute("aria-live", "polite");
-      countEl.setAttribute("role", "status");
     }
 
     function initFromHash() {
@@ -378,7 +457,6 @@
         icon: document.getElementById("detailIcon"),
         desc: document.getElementById("detailDesc"),
         specs: document.getElementById("detailSpecs"),
-        sku: document.getElementById("detailSku"),
         lead: document.getElementById("detailLead"),
         stock: document.getElementById("detailStock"),
         sheet: document.getElementById("detailSheet"),
@@ -391,8 +469,8 @@
       grid.addEventListener("click", (e) => {
         const btn = e.target.closest('[data-action="detalle"]');
         if (!btn) return;
-        const id = btn.getAttribute("data-id");
-        const item = catalogo.find((x) => (x.sku || x.titulo) === id);
+        const idTitulo = btn.getAttribute("data-id"); // ahora usamos el título como ID
+        const item = catalogo.find((x) => x.titulo === idTitulo);
         if (!item) return;
         showItemDetail(item, el, detailModal);
       });
@@ -405,7 +483,7 @@
       setupDetailImage(item, el);
       renderSpecifications(item, el);
 
-      el.sku.textContent = item.sku || "—";
+      // Metadatos visibles
       el.lead.textContent = item.lead_time || "—";
       el.stock.textContent = item.stock || "—";
 
@@ -471,8 +549,7 @@
       const message =
         `Hola ELIND, quiero este repuesto:\n` +
         `• ${item.titulo}\n` +
-        (item.sku ? `• SKU: ${item.sku}\n` : "") +
-        `¿Me ayudas con esta parte y su disponibilidad?`;
+        `¿Me ayudas con el precio y su disponibilidad?`;
       el.whats.href = `https://wa.me/573133845117?text=${encodeURIComponent(message)}`;
     }
   });

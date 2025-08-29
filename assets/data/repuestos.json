@@ -1,9 +1,500 @@
 {
   "items": [
+            {
+      "titulo": "Tubo oscilador 833C",
+      "descripcion": "Triodo de potencia para osciladores RF (HF), vidrio.",
+      "categoria": "tubos",
+      "tags": ["tubos","833C","triodo","rf","oscilador"],
+      "badge": "Disponible en Stock",
+      "estado": "success",
+      "icon": "bi-cpu",
+      "img": "assets/img/repuestos/833C.jpg",
+      "specs": ["Enfriamiento: forzado por aire", "El tubo 833C es un triodo de vidrio. Corriente de Filamento de 9.9 Amperios.", "La potencia de salida será de hasta 1,8 kW cuando la frecuencia sea inferior a 30 MHz. Se utiliza como oscilador en equipos industriales de calentamiento de alta frecuencia (HF) y como amplificador en equipos de radio."],
+      "datasheet": "assets/docs/833c.pdf",
+      "lead_time": "Según disponibilidad",
+      "stock": "Consultar"
+    },
+          {
+    "titulo": "Miliamperímetro 0–5",
+    "descripcion": "Instrumento para medición de 0 a 5 mA.",
+    "categoria": "control",
+    "tags": ["miliamperimetro","medicion","corriente","0-5mA","instrumento","industrial"],
+    "badge": "Disponible en Stock",
+    "estado": "success",
+    "icon": "bi-speedometer2",
+    "img": "assets/img/repuestos/miliamperimetro-0-5.jpg",
+    "specs": [
+      "Rango de medición: 0–5 mA",
+      "Tipo: analógico de aguja",
+      "Escala: clara y de fácil lectura",
+      "Aplicación: tableros eléctricos e industriales"
+    ],
+    "datasheet": "assets/docs/miliamperimetro-0-5.pdf",
+    "lead_time": "Inmediato",
+    "stock": "Disponible"
+  },
+            {
+      "titulo": "Tubo oscilador 3CX2500F3",
+      "descripcion": "Triodo de potencia para osciladores RF (HF), vidrio.",
+      "categoria": "tubos",
+      "tags": ["tubos","3CX2500F3","triodo","rf","oscilador"],
+      "badge": "Disponible en Stock",
+      "estado": "success",
+      "icon": "bi-cpu",
+      "img": "assets/img/repuestos/3CX2500F3.jpg",
+      "specs": ["Enfriamiento: forzado por aire", "El tubo 3CX2500F3 es un triodo de ánodo externo con construcción cerámica-metal. Diseñado para aplicaciones de calentamiento industrial por RF. Filamento 7.5 Voltios.","La potencia de salida será de hasta 7,5 kW cuando la frecuencia sea inferior a 30 MHz. Se utiliza como oscilador en equipos industriales de calentamiento de alta frecuencia (HF) y como amplificador en equipos de radio."],
+      "datasheet": "assets/docs/3CX2500F3.pdf",
+      "lead_time": "Según disponibilidad",
+      "stock": "Consultar"
+    },
+          {
+        "titulo": "Contador indicador digital",
+        "descripcion": "Contador digital para aplicaciones industriales de conteo.",
+        "categoria": "control",
+        "tags": ["contador","digital","lcd","industrial","korea","8digitos"],
+        "badge": "Disponible en Stock",
+        "estado": "success",
+        "icon": "bi-calculator",
+        "img": "assets/img/repuestos/contador-digital-8digitos.jpg",
+        "specs": [
+          "Rango: 0 – 99,999,999",
+          "Pantalla: LCD de 8 dígitos",
+          "Velocidad de conteo: 20 cps",
+          "Funciones: Reset frontal y remoto",
+          "Entrada: contacto seco libre de voltaje",
+          "Alimentación: batería interna 3VDC",
+          "Dimensiones: W48 x H24 mm",
+          "Origen: Korea"
+        ],
+        "datasheet": "assets/docs/contador-digital-8digitos.pdf",
+        "lead_time": "Inmediato",
+        "stock": "Disponible"
+      },
+    {
+  "titulo": "Autotransformador 6,5 KVA",
+  "descripcion": "Autotransformador acorazado monofásico de uso industrial.",
+  "categoria": "transformador",
+  "tags": ["autotransformador","acorazado","6.5kva","industrial","monofasico"],
+  "badge": "Consultar disponibilidad",
+  "estado": "primary",
+  "icon": "bi-lightning",
+  "img": "assets/img/repuestos/autotransformador-6_5kva.jpg",
+  "specs": [
+    "Tipo: autotransformador monofásico acorazado",
+    "Potencia: 6,5 KVA",
+    "Construcción: tipo seco acorazado",
+    "Aplicación: control y alimentación de equipos industriales"
+  ],
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+{
+  "titulo": "Electrodo para selladora de carpas",
+  "descripcion": "Electrodo de alta frecuencia diseñado para sellado de carpas y lonas.",
+  "categoria": "electrodo",
+  "tags": ["electrodo","sellado","carpas","lonas","hf","industrial"],
+  "badge": "Disponible en Stock",
+  "estado": "success",
+  "icon": "bi-box-seam",
+  "img": "assets/img/repuestos/electrodo-carpa.jpg",
+  "specs": [
+    "Aplicación: sellado de carpas, lonas y materiales plásticos",
+    "Material: bronce/aluminio de alta conductividad",
+    "Compatibilidad: selladoras de alta frecuencia",
+    "Durabilidad: alta resistencia al desgaste"
+  ],
+  "datasheet": "assets/docs/electrodo-carpa.pdf",
+  "lead_time": "Inmediato",
+  "stock": "Disponible"
+},
+
     {
   "titulo": "Turbina 1 HP",
   "descripcion": "Turbina trifásica con protección térmica.",
-  "categoria": "otros",
+  "categoria": "turbina",
+  "tags": ["turbina","1hp","trifasica","220v","termico","3500rpm","cono6","base","industrial"],
+  "badge": "Disponible en Stock",
+  "estado": "success",
+  "icon": "bi-wind",
+  "img": "assets/img/repuestos/turbina-1hp-trifasica-220v-3500rpm.jpg",
+  "specs": [
+    "Potencia: 1 HP",
+    "Alimentación: 220V trifásica",
+    "Velocidad: 3500 RPM",
+    "Protección: térmico incorporado",
+    "Incluye: cono de 6” y base de montaje",
+    "Aplicación: ventilación y enfriamiento industrial pesado, en entornos exigentes"
+  ],
+  "datasheet": "assets/docs/turbina-1hp-trifasica-220v-3500rpm.pdf",
+  "lead_time": "Inmediato",
+  "stock": "Disponible"
+}, 
+{
+  "titulo": "Electrodos para diversos trabajos",
+  "descripcion": "Electrodo fabricado bajo planos requeridos, adaptable a múltiples aplicaciones.",
+  "categoria": "electrodo",
+  "tags": ["electrodo","personalizado","planos","industrial","hf","sellado"],
+  "badge": "Planos requeridos",
+  "estado": "primary",
+  "icon": "bi-puzzle",
+  "img": "assets/img/repuestos/electrodo-diversos.jpg",
+  "specs": [
+    "Aplicación: electrodos para distintos procesos industriales",
+    "Fabricación: bajo planos técnicos requeridos por el cliente",
+    "Materiales: bronce, aluminio u otros según especificación",
+    "Compatibilidad: selladoras de alta frecuencia y maquinaria especializada"
+  ],
+  "datasheet": "assets/docs/electrodo-diversos.pdf",
+  "lead_time": "Según requerimiento",
+  "stock": "Bajo pedido"
+},
+          {
+        "titulo": "Conexiones de bronce de alta resistencia",
+        "descripcion": "Conexiones en bronce de alta resistencia, para Alta Frecuencia.",
+        "categoria": "otros",
+        "tags": ["conexiones","bronce","altaresistencia","industrial","potencia","rf"],
+        "badge": "Disponible en Stock",
+        "estado": "success",
+        "icon": "bi-plug",
+        "img": "assets/img/repuestos/conexiones-bronce.jpg",
+        "specs": [
+          "Material: bronce de alta resistencia",
+          "Aplicaciones: conexiones eléctricas y RF",
+          "Alta conductividad y durabilidad",
+          "Resistencia superior a desgaste, torsión y corrosión",
+          "se pueden fabricar a medida"
+        ],
+        "datasheet": "assets/docs/conexiones-bronce.pdf",
+        "lead_time": "Inmediato",
+        "stock": "Disponible"
+      },
+       {
+          "titulo": "Juego de diodos hasta 10 kW",
+          "descripcion": "Kit de diodos para rectificación en equipos de hasta 10 kW.",
+          "categoria": "otros",
+          "tags": ["diodos","rectificacion","potencia","10kw","industrial","kit"],
+          "badge": "Disponible en Stock",
+          "estado": "success",
+          "icon": "bi-dash-circle-fill",
+          "img": "assets/img/repuestos/juego-diodos-10kw.jpg",
+          "specs": [
+            "Tipo: diodos de potencia para rectificación",
+            "Capacidad: hasta 10 kW",
+            "Aplicación: equipos industriales de gran potencia",
+            "Formato: juego completo para reemplazo"
+          ],
+          "datasheet": "assets/docs/juego-diodos-10kw.pdf",
+          "lead_time": "Inmediato",
+          "stock": "Disponible"
+        },
+        {
+      "titulo": "Porta-electrodos",
+      "descripcion": "Soporte para fijación rápida de electrodos en mesa.",
+      "categoria": "otros",
+      "tags": ["porta-electrodo","mecanico","fijacion","mesa"],
+      "badge": "Bajo plano segun el Equipo",
+      "estado": "info",
+      "icon": "bi-geo-alt",
+      "img": "assets/img/repuestos/porta-electrodo.jpg",
+      "specs": ["Compatibilidad: universal", "Material: acero/bronce"],
+      "datasheet": "assets/docs/porta-electrodo.pdf",
+      "lead_time": "4–6 días",
+      "stock": "Medio"
+    },
+    {
+  "titulo": "Fuente trifásica 5,5 KVA",
+  "descripcion": "Fuente industrial trifásica de alta tensión para equipos de potencia.",
+  "categoria": "transformador",
+  "tags": ["fuente","trifasica","alta-tension","220v","6000vdc","5.5kva","industrial"],
+  "badge": "Consultar disponibilidad",
+  "estado": "primary",
+  "icon": "bi-lightning-charge",
+  "img": "assets/img/repuestos/fuente-trifasica-5_5kva.jpg",
+  "specs": [
+    "Tipo: fuente trifásica de alta tensión",
+    "Primario: 220 VCA trifásico",
+    "Secundario: 6000 VDC",
+    "Potencia: 5,5 KVA",
+    "Aplicación: equipos industriales de alta frecuencia y potencia"
+  ],
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+    {
+  "titulo": "Transformador alta tensión 7kVDC",
+  "descripcion": "Transformador monofásico industrial de alta tensión.",
+  "categoria": "transformador",
+  "tags": ["transformador","alta-tension","220v","7000vdc","industrial"],
+  "badge": "Consultar disponibilidad",
+  "estado": "primary",
+  "icon": "bi-lightning-fill",
+  "img": "assets/img/repuestos/transformador-7kvdc.jpg",
+  "specs": [
+    "Tipo: transformador monofásico de alta tensión",
+    "Primario: 220 V",
+    "Secundario: 7000 VDC",
+    "Aplicación: equipos industriales de potencia y alta frecuencia"
+  ],
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+    {
+  "titulo": "Autotransformador 5,5 KVA",
+  "descripcion": "Autotransformador acorazado monofásico de uso industrial.",
+  "categoria": "transformador",
+  "tags": ["autotransformador","acorazado","5.5kva","industrial"],
+  "badge": "Consultar disponibilidad",
+  "estado": "primary",
+  "icon": "bi-lightning",
+  "img": "assets/img/repuestos/autotransformador-5_5kva.jpg",
+  "specs": [
+    "Tipo: autotransformador monofásico acorazado",
+    "Potencia: 5,5 KVA",
+    "Voltaje de salida: desde 80V hasta 260V",
+    "Aplicación: control y alimentación de equipos industriales"
+  ],
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+    {
+  "titulo": "Autotransformador seco 21 KVA",
+  "descripcion": "Autotransformador monofásico industrial tipo seco y acorazado.",
+  "categoria": "transformador",
+  "tags": ["autotransformador","21kva","seco","acorazado","80v-260v","industrial"],
+  "badge": "Consultar disponibilidad",
+  "estado": "primary",
+  "icon": "bi-lightning-fill",
+  "img": "assets/img/repuestos/autotransformador-seco-21kva.jpg",
+  "specs": [
+    "Tipo: autotransformador monofásico seco, acorazado",
+    "Potencia: 21 KVA",
+    "Voltaje de salida: desde 80V hasta 260V",
+    "Aplicación: equipos industriales de alta potencia"
+  ],
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+    {
+  "titulo": "Fuente trifásica 4,5 KVA",
+  "descripcion": "Fuente industrial de alta tensión trifásica para equipos de potencia.",
+  "categoria": "transformador",
+  "tags": ["fuente","trifasica","alta-tension","220v","6000vdc","4.5kva","industrial"],
+  "badge": "Consultar disponibilidad",
+  "estado": "primary",
+  "icon": "bi-lightning-charge",
+  "img": "assets/img/repuestos/fuente-trifasica-4_5kva.jpg",
+  "specs": [
+    "Tipo: fuente trifásica de alta tensión",
+    "Primario: 220 VAC trifásico",
+    "Aplicación: equipos industriales de alta frecuencia y potencia"
+  ],
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+    {
+  "titulo": "Transformador de filamento",
+  "descripcion": "Transformador monofásico de filamento industrial.",
+  "categoria": "transformador",
+  "tags": ["transformador","filamento","210v","220v","230v","6.3v","170a","industrial"],
+  "badge": "De 10 a 20 días",
+  "estado": "secondary",
+  "icon": "bi-lightning-fill",
+  "img": "assets/img/repuestos/transformador-filamento-170a.jpg",
+  "specs": [
+    "Tipo: transformador monofásico de filamento",
+    "Primario: 210/220/230 V",
+    "Secundario: 6.3 V",
+    "Aplicación: equipos industriales de alta frecuencia y potencia"
+  ],
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+    {
+  "titulo": "Transformador de filamento",
+  "descripcion": "Transformador monofásico de filamento para alta corriente.",
+  "categoria": "transformador",
+  "tags": ["transformador","filamento","210v","220v","230v","7.5v","industrial"],
+  "badge": "Consultar disponibilidad",
+  "estado": "primary",
+  "icon": "bi-lightning",
+  "img": "assets/img/repuestos/transformador-filamento.jpg",
+  "specs": [
+    "Tipo: transformador monofásico de filamento",
+    "Primario: 210/220/230 V",
+    "Secundario: 7,5 V",
+    "Aplicación: equipos de alta frecuencia y potencia industrial"
+  ],
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+    {
+  "titulo": "Transformador 220V / 110-24-48V",
+  "descripcion": "Transformador monofásico compacto",
+  "categoria": "transformador",
+  "tags": ["transformador","220v","110v","24v","48v","monofasico","industrial"],
+  "badge": "Consultar disponibilidad",
+  "estado": "primary",
+  "icon": "bi-lightning",
+  "img": "assets/img/repuestos/transformador-220v-110-24-48v-50w.jpg",
+  "specs": [
+    "Tipo: transformador monofásico",
+    "Primario: 220 V",
+    "Secundarios: 110V / 24V / 48V",
+    "Aplicación: sistemas de control y equipos industriales"
+  ],
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+    {
+  "titulo": "Autotransformador 3,5 KVA",
+  "descripcion": "Autotransformador monofásico industrial de amplio rango.",
+  "categoria": "transformador",
+  "tags": ["autotransformador","monofasico","3.5kva","industrial"],
+  "badge": "Consultar disponibilidad",
+  "estado": "primary",
+  "icon": "bi-lightning-charge",
+  "img": "assets/img/repuestos/autotransformador-3_5kva.jpg",
+  "specs": [
+    "Tipo: autotransformador monofásico",
+    "Potencia: 3,5 KVA",
+    "Aplicación: equipos industriales y de control"
+  ],
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+    {
+  "titulo": "Transformador alta tensión 7kVDC",
+  "descripcion": "Transformador monofásico de alta tensión para equipos industriales.",
+  "categoria": "transformador",
+  "tags": ["transformador","alta-tension","220v","7000vdc","industrial"],
+  "badge": "De 10 a 20 días",
+  "estado": "secondary",
+  "icon": "bi-lightning-fill",
+  "img": "assets/img/repuestos/transformador-7kvdc.jpg",
+  "specs": [
+    "Tipo: transformador monofásico de alta tensión",
+    "Primario: 220 V",
+    "Secundario: 7000 VDC",
+    "Aplicación: equipos industriales de potencia y alta frecuencia"
+  ],
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+    {
+  "titulo": "Fuente alta tensión 3,5 KVA",
+  "descripcion": "Fuente monofásica de alta tensión para aplicaciones industriales.",
+  "categoria": "transformador",
+  "tags": ["fuente","alta-tension","monofasica","3.5kva","industrial","5500vac"],
+  "badge": "Consultar disponibilidad",
+  "estado": "primary",
+  "icon": "bi-lightning",
+  "img": "assets/img/repuestos/fuente-alta-tension-3_5kva.jpg",
+  "specs": [
+    "Tipo: fuente/transformador monofásico de alta tensión",
+    "Primario: 210/220/230 V",
+    "Potencia: 3,5 KVA",
+    "Aplicación: equipos industriales de alta frecuencia y potencia"
+  ],
+
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+    {
+  "titulo": "Autotransformador seco 21 KVA",
+  "descripcion": "Autotransformador industrial tipo acorazado de alta capacidad.",
+  "categoria": "transformador",
+  "tags": ["autotransformador","seco","21kva","industrial"],
+  "badge": "Consultar disponibilidad",
+  "estado": "primary",
+  "icon": "bi-lightning-charge",
+  "img": "assets/img/repuestos/autotransformador-21kva.jpg",
+  "specs": [
+    "Tipo: autotransformador monofásico seco, tipo acorazado",
+    "Potencia: 21 KVA",
+    "Aplicación: equipos industriales de alta potencia"
+  ],
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+    {
+  "titulo": "Transformador de filamento",
+  "descripcion": "Transformador monofásico para filamento de baja tensión.",
+  "categoria": "transformador",
+  "tags": ["transformador","filamento","210v","220v","230v","10v","industrial"],
+  "badge": "Consultar disponibilidad",
+  "estado": "primary",
+  "icon": "bi-lightning",
+  "img": "assets/img/repuestos/transformador-filamento.jpg",
+  "specs": [
+    "Tipo: transformador monofásico de filamento",
+    "Primario: 210/220/230 V",
+    "Secundario: 10 V",
+    "Aplicación: sistemas de filamento y control industrial"
+  ],
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+    {
+  "titulo": "Autotransformador 1,8 KVA",
+  "descripcion": "Autotransformador monofásico de uso industrial.",
+  "categoria": "transformador",
+  "tags": ["autotransformador","monofasico","1.8kva","industrial","260v"],
+  "badge": "Consultar disponibilidad",
+  "estado": "primary",
+  "icon": "bi-lightning-charge",
+  "img": "assets/img/repuestos/autotransformador-1_8kva.jpg",
+  "specs": [
+    "Tipo: autotransformador monofásico",
+    "Voltaje de entrada: 80V a 260V",
+    "Potencia: 1,8 KVA",
+    "Aplicación: equipos industriales y de control"
+  ],
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+    {
+  "titulo": "Transformador 220V / 110V – 48V 40W",
+  "descripcion": "Transformador monofásico de 220V para aplicaciones industriales.",
+  "categoria": "transformador",
+  "tags": ["transformador","220v","110v","48v","40w","monofasico","industrial"],
+  "badge": "Consultar disponibilidad",
+  "estado": "primary",
+  "icon": "bi-lightning",
+  "img": "assets/img/repuestos/transformador-220v-110v-48v-40w.jpg",
+  "specs": [
+    "Tipo: transformador monofásico",
+    "Primario: 220V",
+    "Secundarios: 110V y 48V",
+    "Potencia: 40 W",
+    "Aplicación: sistemas de control y equipos industriales"
+  ],
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+{
+  "titulo": "Fuente monofásica 1,7 KVA",
+  "descripcion": "Transformador monofásico de potencia",
+  "categoria": "transformador",
+  "tags": ["fuente","transformador","monofasico","4200vac","1.7kva","industrial"],
+  "badge": "Consultar disponibilidad",
+  "estado": "primary",
+  "icon": "bi-lightning-charge",
+  "img": "assets/img/repuestos/fuente-monofasica-1_7kva.jpg",
+  "specs": [
+    "Tipo: transformador monofásico",
+    "Primario: 210/220/230 V",
+    "Secundario: 4200 VAC",
+    "Potencia: 1,7 KVA",
+    "Aplicación: equipos industriales de alta tensión"
+  ],
+  "datasheet": "assets/docs/fuente-monofasica-1_7kva.pdf",
+  "lead_time": "Según disponibilidad",
+  "stock": "Consultar"
+},
+    {
+  "titulo": "Turbina 1 HP",
+  "descripcion": "Turbina trifásica con protección térmica.",
+  "categoria": "turbina",
   "tags": ["turbina","1hp","trifasica","220v","termico","3500rpm","cono6","base","industrial"],
   "badge": "Disponible en Stock",
   "estado": "success",
@@ -24,7 +515,7 @@
     {
   "titulo": "Turbina 1/2 HP bifásica 220V",
   "descripcion": "Turbina con protección térmica para ventilación de alto desempeño.",
-  "categoria": "otros",
+  "categoria": "turbina",
   "tags": ["turbina","1/2hp","bifasica","220v","termico","3500rpm","cono4","base","industrial"],
   "badge": "Disponible en Stock",
   "estado": "success",
@@ -45,7 +536,7 @@
     {
   "titulo": "Turbina 3/4 HP trifásica 220V con cono y base 3500 RPM",
   "descripcion": "Turbina industrial para alto rendimiento",
-  "categoria": "otros",
+  "categoria": "turbina",
   "tags": ["turbina","trifasica","220v","3500rpm","3/4hp","cono","base","industrial"],
   "badge": "Disponible en Stock",
   "estado": "success",
@@ -65,7 +556,7 @@
     {
   "titulo": "Turbina 110V 2 fases con térmico 3200 RPM",
   "descripcion": "Turbina con protección térmica",
-  "categoria": "otros",
+  "categoria": "turbina",
   "tags": ["turbina","110v","2fases","termico","3200rpm","industrial","ventilacion"],
   "badge": "Disponible en Stock",
   "estado": "success",
@@ -85,7 +576,7 @@
     {
   "titulo": "Turbina 220V 2 fases con térmico 3450 RPM",
   "descripcion": "Turbina con protección térmica incorporada",
-  "categoria": "otros",
+  "categoria": "turbina",
   "tags": ["turbina","220v","2fases","termico","3450rpm","industrial","ventilacion"],
   "badge": "Disponible en Stock",
   "estado": "success",
@@ -105,7 +596,7 @@
     {
   "titulo": "Turbina 110V 1/8” 3450 RPM",
   "descripcion": "Turbina compacta para ventilación y sistemas de enfriamiento industrial.",
-  "categoria": "otros",
+  "categoria": "turbina",
   "tags": ["turbina","110v","3450rpm","ventilacion","industrial","enfriamiento"],
   "badge": "Disponible en Stock",
   "estado": "success",
@@ -124,7 +615,7 @@
         {
       "titulo": "Ventiladores de disipación modelos 1800",
       "descripcion": "Ventiladores industriales para equipos de 1800 W de alta frecuencia.",
-      "categoria": "otros",
+      "categoria": "turbina",
       "tags": ["ventiladores","disipacion","1800w","altafrecuencia","industrial","cooling"],
       "badge": "Disponible en Stock",
       "estado": "success",
@@ -140,25 +631,7 @@
       "lead_time": "Inmediato",
       "stock": "Disponible"
     },
-            {
-          "titulo": "Juego de diodos hasta 10 kW",
-          "descripcion": "Kit de diodos para rectificación en equipos de hasta 10 kW.",
-          "categoria": "otros",
-          "tags": ["diodos","rectificacion","potencia","10kw","industrial","kit"],
-          "badge": "Disponible en Stock",
-          "estado": "success",
-          "icon": "bi-dash-circle-fill",
-          "img": "assets/img/repuestos/juego-diodos-10kw.jpg",
-          "specs": [
-            "Tipo: diodos de potencia para rectificación",
-            "Capacidad: hasta 10 kW",
-            "Aplicación: equipos industriales de gran potencia",
-            "Formato: juego completo para reemplazo"
-          ],
-          "datasheet": "assets/docs/juego-diodos-10kw.pdf",
-          "lead_time": "Inmediato",
-          "stock": "Disponible"
-        },
+           
           {
         "titulo": "Diodos rectificadores hasta 3,5 kW",
         "descripcion": "Kit de diodos para rectificación en equipos industriales",
@@ -219,7 +692,7 @@
 
           {
         "titulo": "Resistencias 3000Ω 200W",
-        "descripcion": "Resistencias de potencia 3000 ohmios x 200W, diseñadas para aplicaciones industriales y de alta carga.",
+        "descripcion": "Resistencias de potencia 3000 ohmios x 200W, diseñadas para aplicaciones industriales.",
         "categoria": "otros",
         "tags": ["resistencias","3000ohm","200w","potencia","industrial","carga"],
         "badge": "Disponible en Stock",
@@ -255,26 +728,6 @@
       "stock": "Disponible"
     },
           {
-        "titulo": "Conexiones de bronce de alta resistencia",
-        "descripcion": "Conexiones en bronce de alta resistencia, para Alta Frecuencia.",
-        "categoria": "otros",
-        "tags": ["conexiones","bronce","altaresistencia","industrial","potencia","rf"],
-        "badge": "Disponible en Stock",
-        "estado": "success",
-        "icon": "bi-plug",
-        "img": "assets/img/repuestos/conexiones-bronce.jpg",
-        "specs": [
-          "Material: bronce de alta resistencia",
-          "Aplicaciones: conexiones eléctricas y RF",
-          "Alta conductividad y durabilidad",
-          "Resistencia superior a desgaste, torsión y corrosión",
-          "se pueden fabricar a medida"
-        ],
-        "datasheet": "assets/docs/conexiones-bronce.pdf",
-        "lead_time": "Inmediato",
-        "stock": "Disponible"
-      },
-          {
     "titulo": "Miliamperímetro 0–3",
     "descripcion": "Instrumento para medición de 0 a 3 mA.",
     "categoria": "control",
@@ -290,25 +743,6 @@
       "Aplicación: tableros eléctricos e industriales"
     ],
     "datasheet": "assets/docs/miliamperimetro-0-3.pdf",
-    "lead_time": "Inmediato",
-    "stock": "Disponible"
-  },
-      {
-    "titulo": "Miliamperímetro 0–5",
-    "descripcion": "Instrumento para medición de 0 a 5 mA.",
-    "categoria": "control",
-    "tags": ["miliamperimetro","medicion","corriente","0-5mA","instrumento","industrial"],
-    "badge": "Disponible en Stock",
-    "estado": "success",
-    "icon": "bi-speedometer2",
-    "img": "assets/img/repuestos/miliamperimetro-0-5.jpg",
-    "specs": [
-      "Rango de medición: 0–5 mA",
-      "Tipo: analógico de aguja",
-      "Escala: clara y de fácil lectura",
-      "Aplicación: tableros eléctricos e industriales"
-    ],
-    "datasheet": "assets/docs/miliamperimetro-0-5.pdf",
     "lead_time": "Inmediato",
     "stock": "Disponible"
   },
@@ -345,29 +779,6 @@
           "Montaje: estándar industrial"
         ],
         "datasheet": "assets/docs/aisladores-51.pdf",
-        "lead_time": "Inmediato",
-        "stock": "Disponible"
-      },
-      {
-        "titulo": "Contador indicador digital",
-        "descripcion": "Contador digital para aplicaciones industriales de conteo.",
-        "categoria": "control",
-        "tags": ["contador","digital","lcd","industrial","korea","8digitos"],
-        "badge": "Disponible en Stock",
-        "estado": "success",
-        "icon": "bi-calculator",
-        "img": "assets/img/repuestos/contador-digital-8digitos.jpg",
-        "specs": [
-          "Rango: 0 – 99,999,999",
-          "Pantalla: LCD de 8 dígitos",
-          "Velocidad de conteo: 20 cps",
-          "Funciones: Reset frontal y remoto",
-          "Entrada: contacto seco libre de voltaje",
-          "Alimentación: batería interna 3VDC",
-          "Dimensiones: W48 x H24 mm",
-          "Origen: Korea"
-        ],
-        "datasheet": "assets/docs/contador-digital-8digitos.pdf",
         "lead_time": "Inmediato",
         "stock": "Disponible"
       },
@@ -421,20 +832,6 @@
       "lead_time": "En stock",
       "stock": "Disponible"
     },
-        {
-      "titulo": "Tubo oscilador 833C",
-      "descripcion": "Triodo de potencia para osciladores RF (HF), vidrio.",
-      "categoria": "tubos",
-      "tags": ["tubos","833C","triodo","rf","oscilador"],
-      "badge": "Disponible en Stock",
-      "estado": "success",
-      "icon": "bi-cpu",
-      "img": "assets/img/repuestos/833C.jpg",
-      "specs": ["Enfriamiento: forzado por aire", "El tubo 833C es un triodo de vidrio. Corriente de Filamento de 9.9 Amperios.", "La potencia de salida será de hasta 1,8 kW cuando la frecuencia sea inferior a 30 MHz. Se utiliza como oscilador en equipos industriales de calentamiento de alta frecuencia (HF) y como amplificador en equipos de radio."],
-      "datasheet": "assets/docs/833c.pdf",
-      "lead_time": "Según disponibilidad",
-      "stock": "Consultar"
-    },
     {
       "titulo": "Pulsadores rojos y verdes",
       "descripcion": "Botones de control industrial en colores rojo y verde. Resistentes y confiables para tableros eléctricos.",
@@ -452,20 +849,6 @@
       "datasheet": "assets/docs/pulsadores-rojo-verde.pdf",
       "lead_time": "En stock",
       "stock": "Disponible"
-    },
-        {
-      "titulo": "Tubo oscilador 3CX2500F3",
-      "descripcion": "Triodo de potencia para osciladores RF (HF), vidrio.",
-      "categoria": "tubos",
-      "tags": ["tubos","3CX2500F3","triodo","rf","oscilador"],
-      "badge": "Disponible en Stock",
-      "estado": "success",
-      "icon": "bi-cpu",
-      "img": "assets/img/repuestos/3CX2500F3.jpg",
-      "specs": ["Enfriamiento: forzado por aire", "El tubo 3CX2500F3 es un triodo de ánodo externo con construcción cerámica-metal. Diseñado para aplicaciones de calentamiento industrial por RF. Filamento 7.5 Voltios.","La potencia de salida será de hasta 7,5 kW cuando la frecuencia sea inferior a 30 MHz. Se utiliza como oscilador en equipos industriales de calentamiento de alta frecuencia (HF) y como amplificador en equipos de radio."],
-      "datasheet": "assets/docs/3CX2500F3.pdf",
-      "lead_time": "Según disponibilidad",
-      "stock": "Consultar"
     },
     {
       "titulo": "Pulsador de emergencia",
@@ -630,20 +1013,83 @@
       "lead_time": "1-2 semanas",
       "stock": "Consultar"
     },
-    {
-      "titulo": "Condensadores de barril",
-      "descripcion": "Electrodos en bronce/aluminio para sellado de Altafrecuencia.",
-      "categoria": "potencia",
-      "tags": ["electrodos","hf","pvc","eva","tpu","pu","sellado","altafrecuencia"],
-      "badge": "Entrega 5–10 días",
-      "estado": "secondary",
-      "icon": "bi-lightning-charge",
-      "img": "assets/img/repuestos/condensadores-barril.jpg",
-      "specs": ["Material: Bronce/Aluminio", "Tolerancia: ±0.1 mm", "Acabado: pulido espejo"],
-      "datasheet": "assets/docs/electrodos-standard .pdf",
-      "lead_time": "5–10 días",
-      "stock": "Bajo"
-    },
+{
+  "titulo": "Electrodos macho/hembra alta precisión",
+  "descripcion": "Electrodos industriales de alta precisión tipo macho y hembra.",
+  "categoria": "electrodo",
+  "tags": ["electrodos","macho","hembra","precision","altafrecuencia","industrial"],
+  "badge": "Planos requeridos",
+  "estado": "primary",
+  "icon": "bi-crosshair",
+  "img": "assets/img/repuestos/electrodos-macho-hembra.jpg",
+  "specs": [
+    "Tipo: electrodos macho y hembra",
+    "Fabricación: alta precisión para sellado exacto",
+    "Material: bronce/aluminio de alta conductividad",
+    "Aplicación: productos de alta precisión y acabados de alta calidad"
+  ],
+  "datasheet": "assets/docs/electrodos-macho-hembra.pdf",
+  "lead_time": "Según requerimiento",
+  "stock": "Bajo pedido"
+},
+{
+  "titulo": "Electrodos para repujado de capelladas",
+  "descripcion": "Electrodos especiales para repujado de capelladas en calzado.",
+  "categoria": "electrodo",
+  "tags": ["electrodos","repujado","capelladas","zapatos","hf","industrial"],
+  "badge": "Planos requeridos",
+  "estado": "primary",
+  "icon": "bi-bag",
+  "img": "assets/img/repuestos/electrodos-repujado-capelladas.jpg",
+  "specs": [
+    "Aplicación: repujado de capelladas en la industria del calzado",
+    "Fabricación: bajo planos técnicos según diseño requerido",
+    "Materiales: bronce/aluminio de alta precisión",
+    "Compatibilidad: selladoras de alta frecuencia para calzado"
+  ],
+  "datasheet": "assets/docs/electrodos-repujado-capelladas.pdf",
+  "lead_time": "Según requerimiento",
+  "stock": "Bajo pedido"
+}, 
+{
+  "titulo": "Electrodos para repujado en cuero sintético",
+  "descripcion": "Electrodos industriales para repujado de materiales sintéticos.",
+  "categoria": "electrodo",
+  "tags": ["electrodos","repujado","cuero-sintetico","hf","industrial","personalizado"],
+  "badge": "Planos requeridos",
+  "estado": "primary",
+  "icon": "bi-puzzle",
+  "img": "assets/img/repuestos/electrodos-repujado-cuero-sintetico.jpg",
+  "specs": [
+    "Aplicación: repujado en cuero sintético y materiales plásticos similares, cumple funcion de texturizado o grabado de marquillas",
+    "Fabricación: personalizada bajo planos técnicos del cliente",
+    "Materiales: bronce/aluminio de alta conductividad y durabilidad",
+    "Compatibilidad: selladoras de alta frecuencia industriales"
+  ],
+  "datasheet": "assets/docs/electrodos-repujado-cuero-sintetico.pdf",
+  "lead_time": "Según requerimiento",
+  "stock": "Bajo pedido"
+},
+{
+  "titulo": "Electrodos especiales con refrigeración",
+  "descripcion": "Electrodos industriales con refrigeración por agua para trabajos exigentes.",
+  "categoria": "electrodo",
+  "tags": ["electrodos","especiales","refrigeracion","agua","hf","industrial"],
+  "badge": "Planos requeridos",
+  "estado": "primary",
+  "icon": "bi-droplet",
+  "img": "assets/img/repuestos/electrodos-refrigerados-agua.jpg",
+  "specs": [
+    "Aplicación: procesos industriales de alta exigencia",
+    "Fabricación: bajo planos técnicos especiales",
+    "Sistema: refrigeración por agua integrada",
+    "Material: bronce/aluminio de alta conductividad",
+    "Compatibilidad: selladoras HF en trabajos continuos"
+  ],
+  "datasheet": "assets/docs/electrodos-refrigerados-agua.pdf",
+  "lead_time": "Según requerimiento",
+  "stock": "Bajo pedido"
+},
     {
       "titulo": "Electrodo con cuchilla integrada",
       "descripcion": "Electrodo con filo de corte para sellado + troquelado en un paso.",
@@ -742,20 +1188,6 @@
       "datasheet": "assets/docs/rele-80a.pdf",
       "lead_time": "2–3 días",
       "stock": "Alto"
-    },
-    {
-      "titulo": "Porta-electrodo universal",
-      "descripcion": "Soporte para fijación rápida de electrodos en mesa.",
-      "categoria": "otros",
-      "tags": ["porta-electrodo","mecanico","fijacion","mesa"],
-      "badge": "OEM",
-      "estado": "info",
-      "icon": "bi-geo-alt",
-      "img": "assets/img/repuestos/porta-electrodo.jpg",
-      "specs": ["Compatibilidad: universal", "Material: acero/bronce"],
-      "datasheet": "assets/docs/porta-electrodo.pdf",
-      "lead_time": "4–6 días",
-      "stock": "Medio"
     }
   ]
 }

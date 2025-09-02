@@ -1,77 +1,77 @@
-(function(){
-  // Detecta el <base> para construir rutas absolutas correctas
-  const baseEl = document.querySelector('base');
-  const BASE = (baseEl ? baseEl.getAttribute('href') : '/') || '/';
-  const headerURL = new URL('assets/partials/header.html', location.origin + BASE).toString();
+(function () {
+  document.addEventListener('DOMContentLoaded', () => {
+    const mount = document.getElementById('app-header');
+    if (!mount) return;
 
-  // Carga e inyecta el parcial
-  fetch(headerURL, { cache: 'no-cache' })
-    .then(res => {
-      if (!res.ok) throw new Error('No se pudo cargar el header');
-      return res.text();
-    })
-    .then(html => {
-      const mount = document.getElementById('app-header');
-      if (!mount) return;
-      mount.innerHTML = html;
+    // Resuelve la URL del parcial respetando <base>
+    const headerURL = new URL('assets/partials/header.html', document.baseURI).toString();
 
-      // Activa el item correcto según la página actual
-      highlightActive();
+    fetch(headerURL, { cache: 'no-cache' })
+      .then(res => {
+        if (!res.ok) throw new Error(`Header HTTP ${res.status}`);
+        return res.text();
+      })
+      .then(html => {
+        mount.innerHTML = html;
+        highlightActive();
+        setupMobileToggle();
+      })
+      .catch(err => {
+        console.warn('Header include error:', err);
+      });
 
-      // Activa el toggle móvil
-      setupMobileToggle();
-    })
-    .catch(err => {
-      // Fallback simple si algo falla (opcional)
-      console.warn('Header include error:', err);
-    });
+    function highlightActive(){
+  const links = document.querySelectorAll('#navbar a.nav-link');
+  if (!links.length) return;
 
-  function highlightActive(){
-    const links = document.querySelectorAll('#navbar a.nav-link');
-    if (!links.length) return;
+  // Página actual
+  const currentFile = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
 
-    // Archivo actual (sin slash inicial)
-    const currentFile = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  // Alias: páginas que deben activar otro link
+  const aliasMap = {
+    'innovacion.html': 'services.html',
+    // puedes agregar más pares aquí
+  };
 
-    links.forEach(a => {
-      const href = a.getAttribute('href') || '';
-      const file = href.split('#')[0].toLowerCase() || 'index.html';
-      // Marca activo si coincide archivo, o si es home con #hero
-      const isActive =
-        file === currentFile ||
-        (currentFile === 'index.html' && href.includes('#hero'));
-      if (isActive) {
-        a.classList.add('active');
-        a.setAttribute('aria-current', 'page');
-      }
-    });
-  }
+  // Si la página actual está en aliasMap, sustituimos
+  const effectiveFile = aliasMap[currentFile] || currentFile;
 
-  function setupMobileToggle(){
-    const toggle = document.querySelector('.mobile-nav-toggle');
-    const nav = document.getElementById('navbar');
-    if (!toggle || !nav) return;
+  links.forEach(a => {
+    const href = a.getAttribute('href') || '';
+    const file = href.split('#')[0].toLowerCase() || 'index.html';
+    const isActive =
+      file === effectiveFile ||
+      (effectiveFile === 'index.html' && href.includes('#hero'));
 
-    const toggleMenu = () => {
-      const isOpen = nav.classList.toggle('navbar-mobile');
-      toggle.classList.toggle('bi-list', !isOpen);
-      toggle.classList.toggle('bi-x', isOpen);
-      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    };
+    if (isActive) {
+      a.classList.add('active');
+      a.setAttribute('aria-current', 'page');
+    }
+  });
+}
 
-    toggle.addEventListener('click', toggleMenu);
-    toggle.addEventListener('keydown', (e)=>{
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        toggleMenu();
-      }
-    });
+    function setupMobileToggle() {
+      const nav = document.getElementById('navbar');
+      const toggle = document.querySelector('.mobile-nav-toggle');
+      if (!nav || !toggle) return;
 
-    // Cerrar al hacer click en un link (opcional)
-    nav.addEventListener('click', (e)=>{
-      if (e.target.matches('a.nav-link') && nav.classList.contains('navbar-mobile')) {
-        toggleMenu();
-      }
-    });
-  }
+      const toggleMenu = () => {
+        const isOpen = nav.classList.toggle('navbar-mobile');
+        toggle.classList.toggle('bi-list', !isOpen);
+        toggle.classList.toggle('bi-x', isOpen);
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      };
+
+      toggle.addEventListener('click', toggleMenu);
+      toggle.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleMenu(); }
+      });
+
+      // Cierra en móvil al clickear cualquier link dentro del nav
+      nav.addEventListener('click', (e) => {
+        const link = e.target.closest('a.nav-link');
+        if (link && nav.classList.contains('navbar-mobile')) toggleMenu();
+      });
+    }
+  });
 })();

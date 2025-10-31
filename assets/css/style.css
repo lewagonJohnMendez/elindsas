@@ -937,6 +937,160 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Hero-maquinaria Section
+--------------------------------------------------------------*/
+#hero-maquinaria {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-maquinaria video#video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  filter: brightness(1.05); /* mejora de luz */
+}
+
+#hero-maquinaria::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+
+#hero-maquinaria .container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 15px;
+}
+
+#hero-maquinaria h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #222222;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#hero-maquinaria h1 span {
+  color: #106eea;
+}
+
+
+#hero-maquinaria h2 {
+  color: #555555;
+  margin: 15px 0 30px 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+}
+
+#hero-maquinaria .btn-get-started {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 36px;
+  border-radius: 30px;
+  transition: 0.4s;
+  color: #fff;
+  background: #106eea;
+  box-shadow: 0 4px 15px rgba(16, 110, 234, 0.4);
+}
+
+#hero-maquinaria .btn-get-started:hover {
+  background: #247cf0;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(16, 110, 234, 0.5);
+}
+
+/* ===== BOTÓN DE VIDEO OPCIONAL ===== */
+#hero-maquinaria .btn-watch-video {
+  font-size: 16px;
+  transition: 0.4s;
+  margin-left: 25px;
+  color: #222222;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+#hero-maquinaria .btn-watch-video i {
+  color: #106eea;
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+}
+
+#hero-maquinaria .btn-watch-video:hover {
+  color: #106eea;
+}
+
+#hero-maquinaria .btn-watch-video:hover i {
+  color: #3b8af2;
+}
+
+/* ===== EFECTO FIJO EN PANTALLAS GRANDES ===== */
+@media (min-width: 1024px) {
+  #hero-maquinaria video#video-bg {
+    background-attachment: fixed;
+  }
+}
+
+/* ===== AJUSTES RESPONSIVOS ===== */
+@media (max-width: 768px) {
+  #hero-maquinaria {
+    height: 100vh;
+  }
+
+  #hero-maquinaria h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  #hero-maquinaria h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+
+  #hero-maquinaria .btn-get-started,
+  #hero-maquinaria .btn-watch-video {
+    font-size: 13px;
+    padding: 10px 25px;
+  }
+}
+
+@media (max-height: 500px) {
+  #hero-maquinaria {
+    height: 120vh;
+  }
+}
+
+/*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
@@ -2237,3 +2391,87 @@ section {
     padding: 2px 0;
   }
 }
+
+/*---tarjetas de maquinaria---*/
+/* === IMÁGENES GRANDES CON SOMBRA POWER === */
+#tecnologias .card-img-top {
+  width: 100%;
+  height: 360px; /* altura uniforme */
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: transform 0.5s ease, filter 0.4s ease;
+}
+
+/* zoom sutil + brillo */
+#tecnologias .card-img-top:hover {
+  transform: scale(1.07);
+  filter: brightness(1.15);
+}
+
+/* tarjeta base */
+#tecnologias .card {
+  position: relative;
+  border: none;
+  border-radius: 25px;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 30px;
+  transition: all 0.5s ease;
+  box-shadow:
+    0 0 0 rgba(0,170,255,0), /* glow inicial apagado */
+    0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* === SOMBRA POWER al hover === */
+#tecnologias .card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow:
+    0 0 25px rgba(16,110,234,0.3), /* resplandor azul principal */
+    0 12px 30px rgba(0,0,0,0.15); /* sombra base */
+}
+
+/* brillo azul pulsante (sutil) */
+#tecnologias .card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 25px;
+  background: radial-gradient(circle at top right, rgba(16,110,234,0.12), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 1;
+}
+
+#tecnologias .card:hover::after {
+  opacity: 1;
+}
+
+/* === Texto interno === */
+#tecnologias .card-body {
+  position: relative;
+  z-index: 2;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+#tecnologias .card-title {
+  font-weight: 600;
+  color: #003366;
+  margin-top: 15px;
+}
+
+#tecnologias .card-text {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* === Adaptación responsive === */
+@media (max-width: 768px) {
+  #tecnologias .card-img-top {
+    height: 300px;
+  }
+}
+
+

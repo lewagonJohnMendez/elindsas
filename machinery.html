@@ -26,6 +26,9 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .benefits i {font-size: 2.5rem; color:#106eea; margin-bottom:10px;}
+  </style>
 </head>
 
 <body>
@@ -51,224 +54,122 @@
  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container" data-aos="zoom-out" data-aos-delay="50">
-      <h1><span>Maquinaria</span> que Impulsa tu Producción</h1>
-      <h2>Alta frecuencia, ultrasonido e inducción electromagnética para transformar tu industria</h2>
-      <p>Fabricadas en Colombia, exportadas al mundo. Tecnología que te da ventaja.</p>  
-  <div class="d-flex">
-    <a href="https://wa.me/573133845117" class="btn-get-started">Hablemos de tu Proyecto</a>
-    <a href="#portfolio" class="btn-watch-video">
-      <i class="bi bi-search"></i><span>Ver Maquinaria</span>
-    </a>
-  </div>
+<section id="hero-maquinaria" class="d-flex align-items-center justify-content-center">
+  <!-- VIDEO DE FONDO -->
+  <video autoplay muted loop playsinline id="video-bg">
+    <source src="assets/img/video/maquinaria.mp4" type="video/mp4">
+  </video>
+
+  <!-- CAPA BLANCA SUAVE -->
+  <div class="overlay"></div>
+  <div class="hero-content text-center text-light position-absolute w-100" style="z-index:3;">
+  <h1>
+    <span>Tecnología</span> que impulsa tu producción
+  </h1>
+</div>
+</section>
+<!-- End Hero -->
+
+
+<!-- ======= Selector de Tecnología ======= -->
+  <section id="tecnologias" class="py-5 bg-light text-center">
+    <div class="section-title mb-5">
+      <h3>Nuestras <span>Tecnologías</span></h3>
+    </div>
+
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        <!-- Alta Frecuencia -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/portfolio/selladora_radio_frecuencia.png" class="card-img-top" alt="Alta Frecuencia">
+            <div class="card-body">
+              <h5 class="card-title">Alta Frecuencia</h5>
+              <p class="card-text">Equipos para sellado de PVC, EVA y TPU con precisión y potencia controlada.</p>
+              <a href="altafrecuencia.html" class="btn btn-outline-primary w-100">Ver máquinas</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ultrasonido -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/portfolio/selladora_ultrasonido_costura.png" class="card-img-top" alt="Ultrasonido">
+            <div class="card-body">
+              <h5 class="card-title">Ultrasonido</h5>
+              <p class="card-text">Corte y sellado limpio, sin residuos, ideal para empaques y textiles técnicos.</p>
+              <a href="ultrasonido.html" class="btn btn-outline-primary w-100">Ver máquinas</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inducción -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100" data-aos="fade-up" data-aos-delay="300">
+            <img src="assets/img/portfolio/Horno_Induccion.png" class="card-img-top" alt="Inducción">
+            <div class="card-body">
+              <h5 class="card-title">Inducción Electromagnética</h5>
+              <p class="card-text">Sistemas de calentamiento rápido y controlado para metal y polímeros.</p>
+              <a href="induccion.html" class="btn btn-outline-primary w-100">Ver máquinas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ======= Beneficios de Nuestras Máquinas ======= -->
+
+<!-- ======= SECCIÓN POR QUÉ ELEGIRNOS ======= -->
+<section id="porque-elind" class="py-5 bg-white">
+  <div class="container">
+    <div class="section-title text-center mb-5" data-aos="fade-up">
+      <h3>¿Por qué elegir a <span>ELIND SAS</span>?</h3>
+      <p class="text-muted">Somos más que fabricantes de maquinaria: somos aliados en productividad y tecnología  aplicada.</p>
+    </div>
+
+    <div class="row g-5 align-items-start">
+      <!-- Ingeniería Propia -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="d-flex flex-column align-items-center text-center px-3">
+          <i class="bx bx-analyse" style="font-size:3rem;color:#106eea;margin-bottom:15px;"></i>
+          <h5 class="fw-bold mb-2">Ingeniería Propia</h5>
+          <p class="text-secondary">
+            Diseñamos, ensamblamos y probamos cada máquina en nuestra planta de Bogotá, controlando cada detalle técnico para garantizar un rendimiento estable y duradero.
+          </p>
+        </div>
+      </div>
+
+      <!-- Certificación -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="d-flex flex-column align-items-center text-center px-3">
+          <i class="bx bx-certification" style="font-size:3rem;color:#106eea;margin-bottom:15px;"></i>
+          <h5 class="fw-bold mb-2">Certificación Internacional</h5>
+          <p class="text-secondary">
+            Nuestros equipos cumplen las normas ICNIRP y estándares CE de exposición electromagnética, asegurando un entorno de trabajo seguro y confiable.
+          </p>
+        </div>
+      </div>
+
+      <!-- Soporte Técnico -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="d-flex flex-column align-items-center text-center px-3">
+          <i class="bx bx-support" style="font-size:3rem;color:#106eea;margin-bottom:15px;"></i>
+          <h5 class="fw-bold mb-2">Soporte y Respaldo</h5>
+          <p class="text-secondary">
+            Ofrecemos servicio técnico especializado, repuestos originales y capacitación operativa, garantizando continuidad en tu producción y máximo aprovechamiento de tu inversión.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+      <a href="contact.html" class="btn btn-primary px-4 py-2" style="border-radius:30px;">Solicitar Asesoría Técnica</a>
+    </div>
   </div>
 </section>
 
-<!-- End Hero -->
-   
-  <main id="main">
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portafolio</h2>
-          <h3>Nuestras <span>Soluciones</span></h3>
-          <p>Descubre nuestras soluciones innovadoras en maquinaria de sellado y calentamiento industrial. <br>Cada proyecto desarrollado por nosotros, es un testimonio de calidad, eficiencia y tecnología avanzada para optimizar procesos en la industria.</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">Todo</li>
-              <li data-filter=".filter-manufacturas">Manufacturas</li>
-              <li data-filter=".filter-empaques">Empaques</li>
-              <li data-filter=".filter-lonas">Lonas y Membranas</li>
-              <li data-filter=".filter-no-tejidos">No Tejidos</li>
-              <li data-filter=".filter-tratamientos-termicos">Tratamientos Térmicos</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-lonas">
-            <img src="assets/img/portfolio/1800n.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 1800 watios">
-            <div class="portfolio-info">
-              <h4>SEM 1800N</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/1800n.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="selladora de alta frecuencia"><i class="bx bx-plus"></i></a>
-              <a href="sem1800n-detalles.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-alta-frecuencia">
-            <img src="assets/img/portfolio/1800nq.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 1800 watios para cojines">
-            <div class="portfolio-info">
-              <h4>SEM 1800NQ</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/1800nq.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 1800nq para sellado de cojines"><i class="bx bx-plus"></i></a>
-              <a href="1800nq-detalles.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-alta-frecuencia">
-            <img src="assets/img/portfolio/1800nqinox.jpg" class="img-fluid" alt="electro selladora de alta frecuencia para acero inoxidable para el sellado de cojines">
-            <div class="portfolio-info">
-              <h4>SEM 1800NQ Inoxidable</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/1800nqinox.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 1800nq inoxidable para el sellado de cojínes"><i class="bx bx-plus"></i></a>
-              <a href="1800nqinox-detalles.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-lonas">
-            <img src="assets/img/portfolio/3500n.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 3500 watios para manofacturas">
-            <div class="portfolio-info">
-              <h4>SEM 3500N</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/3500n.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 3500N para manufacturas"><i class="bx bx-plus"></i></a>
-              <a href="3500n-detalles.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-tratamientos-termicos">
-            <img src="assets/img/portfolio/3500nb.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 3500 watios para manofacturas con bandejas">
-            <div class="portfolio-info">
-              <h4>SEM 3500NB</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/3500nb.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 3500N para manufacturas con bandejas"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-empaques">
-            <img src="assets/img/portfolio/4500n.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 4500 watios para manofacturas">
-            <div class="portfolio-info">
-              <h4>SEM 4500N</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/4500n.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 4500N para manufacturas"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-empaques">
-            <img src="assets/img/portfolio/4500nb.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 4500 watios para manofacturas con bandejas">
-            <div class="portfolio-info">
-              <h4>SEM 4500NB</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/4500nb.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 4500NB para manufacturas con bandejas"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-alta-frecuencia">
-            <img src="assets/img/portfolio/6500n.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 6500 watios para manofacturas">
-            <div class="portfolio-info">
-              <h4>SEM 6500N</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/6500n.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 6500N para manufacturas"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-alta-frecuencia">
-            <img src="assets/img/portfolio/6500nbhb.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 6500 watios para manofacturas con bandejas">
-            <div class="portfolio-info">
-              <h4>SEM 6500NB/HB</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/6500nb.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 6500N para manufacturas con bandejas"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-alta-frecuencia">
-            <img src="assets/img/portfolio/15000phb.jpg" class="img-fluid" alt="electro selladora de alta frecuencia de 15000 watios para manofacturas con bandejas">
-            <div class="portfolio-info">
-              <h4>SEM 1500PHB</h4>
-              <p>Alta Frecuencia</p>
-              <a href="assets/img/portfolio/15000phb.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sellladora alta frecuencia sem 15000phb para manufacturas con bandejas"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-  </main><!-- End #main -->
+</body>
 
     <!-- ======= Footer ======= -->
       <div id="app-footer"></div> 
